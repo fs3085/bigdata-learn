@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="canal" />
+        <module name="flink" />
+        <module name="hbase" />
+        <module name="hive" />
+        <module name="spring-boot" />
+        <module name="xysh_flink1.12" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="a" target="1.5" />
+      <module name="flink-redis" target="1.8" />
+      <module name="gmall2020-logger" target="1.8" />
+      <module name="springboot" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
