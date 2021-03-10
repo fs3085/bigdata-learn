@@ -10,6 +10,7 @@
         <module name="flink" />
         <module name="hbase" />
         <module name="hive" />
+        <module name="spark" />
         <module name="spring-boot" />
         <module name="xysh_flink1.12" />
       </profile>
