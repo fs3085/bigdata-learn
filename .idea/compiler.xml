@@ -12,12 +12,13 @@
         <module name="hive" />
         <module name="spark" />
         <module name="spring-boot" />
-        <module name="xysh_flink1.12" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="a" target="1.5" />
       <module name="flink-redis" target="1.8" />
+      <module name="flink1.10" target="1.8" />
+      <module name="flink1.12" target="1.5" />
       <module name="gmall2020-logger" target="1.8" />
       <module name="springboot" target="1.8" />
     </bytecodeTargetLevel>

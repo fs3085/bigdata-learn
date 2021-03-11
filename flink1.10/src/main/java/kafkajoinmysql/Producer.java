@@ -1,4 +1,4 @@
-package kafkajoinmysql;//package kafkajoinmysql;
+//package kafkajoinmysql;
 //
 //import org.apache.flink.api.java.utils.ParameterTool;
 //import org.apache.flink.streaming.api.environment.StreamExecutionEnvironment;

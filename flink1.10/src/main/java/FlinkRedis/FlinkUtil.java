@@ -10,7 +10,7 @@ import org.apache.flink.streaming.api.datastream.DataStream;
 import org.apache.flink.streaming.api.datastream.DataStreamSource;
 import org.apache.flink.streaming.api.environment.CheckpointConfig;
 import org.apache.flink.streaming.api.environment.StreamExecutionEnvironment;
-import org.apache.flink.streaming.connectors.kafka.FlinkKafkaConsumer;
+import org.apache.flink.streaming.connectors.kafka.FlinkKafkaConsumer010;
 
 import java.util.Arrays;
 import java.util.List;
@@ -48,7 +48,7 @@ public class FlinkUtil {
         String topics = parameters.getRequired("topics");
         List<String> topicList = Arrays.asList(topics.split(","));
 
-        DataStreamSource stringDataStreamSource = env.addSource(new FlinkKafkaConsumer<>(topicList, new SimpleStringSchema(), properties));
+        DataStreamSource stringDataStreamSource = env.addSource(new FlinkKafkaConsumer010<>(topicList, new SimpleStringSchema(), properties));
 
 //        //Source : Kafka, 从Kafka中读取数据
 //        FlinkKafkaConsumer<T> kafkaConsumer = new FlinkKafkaConsumer<T>(
