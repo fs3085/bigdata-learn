@@ -1,0 +1,5 @@
+Flink两种分流器Split和Side-Outputs，
+新版本中Split分流接口已经被置为“deprecated”，
+Split只可以进行一级分流，不能进行二级分流，Flink新版本推荐使用Side-Outputs分流器，它支持多级分流。
+
+flink1.12中没有split_select方法

@@ -9,30 +9,30 @@ import org.apache.flink.api.java.tuple.Tuple;
 import org.apache.flink.api.java.tuple.Tuple2;
 import org.apache.flink.configuration.Configuration;
 
-import org.apache.flink.streaming.api.collector.selector.OutputSelector;
+//import org.apache.flink.streaming.api.collector.selector.OutputSelector;
 import org.apache.flink.streaming.api.datastream.DataStream;
 import org.apache.flink.streaming.api.datastream.DataStreamSource;
 import org.apache.flink.streaming.api.datastream.KeyedStream;
-import org.apache.flink.streaming.api.datastream.SplitStream;
+//import org.apache.flink.streaming.api.datastream.SplitStream;
+import org.apache.flink.streaming.api.datastream.SingleOutputStreamOperator;
 import org.apache.flink.streaming.api.environment.StreamExecutionEnvironment;
+import org.apache.flink.streaming.api.functions.ProcessFunction;
 import org.apache.flink.streaming.api.functions.sink.RichSinkFunction;
 import org.apache.flink.streaming.connectors.elasticsearch.ElasticsearchSinkFunction;
 import org.apache.flink.streaming.connectors.elasticsearch.RequestIndexer;
-import org.apache.flink.streaming.connectors.elasticsearch6.ElasticsearchSink;
-import org.apache.flink.streaming.connectors.kafka.FlinkKafkaProducer011;
 import org.apache.flink.streaming.connectors.redis.RedisSink;
 import org.apache.flink.streaming.connectors.redis.common.config.FlinkJedisPoolConfig;
 import org.apache.flink.streaming.connectors.redis.common.mapper.RedisCommand;
 import org.apache.flink.streaming.connectors.redis.common.mapper.RedisCommandDescription;
 import org.apache.flink.streaming.connectors.redis.common.mapper.RedisMapper;
-import org.apache.http.HttpHost;
+import org.apache.flink.util.Collector;
+import org.apache.flink.util.OutputTag;
 import org.elasticsearch.action.index.IndexRequest;
 import org.elasticsearch.client.Requests;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
-import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
 
@@ -45,7 +45,7 @@ public class SourceTest_MySensor {
         KeyedStream<SensorReading, Tuple> keyedStream = sensorStreamSource.keyBy("sensorId");
 
         //  reduce聚合，取最小的温度值，并输出当前的时间戳
-        DataStream<SensorReading> reduceStream = keyedStream.reduce(new ReduceFunction<SensorReading>() {
+        SingleOutputStreamOperator<SensorReading> reduceStream = keyedStream.reduce(new ReduceFunction<SensorReading>() {
             public SensorReading reduce(SensorReading value1, SensorReading value2) throws Exception {
                 return new SensorReading(
                     value1.getSensorId(),
@@ -87,13 +87,29 @@ public class SourceTest_MySensor {
             }
         });
 
-        final SplitStream<SensorReading> splitStream = reduceStream.split(new OutputSelector<SensorReading>() {
-            public Iterable<String> select(SensorReading value) {
-                return (value.getSensorTemp() > 30) ? Collections.singletonList("high") : Collections.singletonList("low");
+        OutputTag<SensorReading> high = new OutputTag<>("high");
+        OutputTag<Object> low = new OutputTag<>("low");
+
+        SingleOutputStreamOperator<SensorReading> splitStream = reduceStream.process(new ProcessFunction<SensorReading, SensorReading>() {
+            @Override
+            public void processElement(SensorReading value, Context context, Collector<SensorReading> collector) throws Exception {
+                if (value.getSensorTemp() > 30) {
+                    context.output(high, value);
+                } else {
+                    context.output(low,value);
+                }
             }
         });
 
-        DataStream<SensorReading> highTempStream = splitStream.select("high");
+        DataStream<SensorReading> highstream = splitStream.getSideOutput(high);
+
+//        SplitStream<SensorReading> splitStream = reduceStream.split(new OutputSelector<SensorReading>() {
+//            public Iterable<String> select(SensorReading value) {
+//                return (value.getSensorTemp() > 30) ? Collections.singletonList("high") : Collections.singletonList("low");
+//            }
+//        });
+//
+//        DataStream<SensorReading> highTempStream = splitStream.select("high");
         //打印
         filter.print();
 

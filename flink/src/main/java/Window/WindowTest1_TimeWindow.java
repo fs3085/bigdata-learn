@@ -23,7 +23,6 @@ import org.apache.flink.util.OutputTag;
 import java.util.Collection;
 
 import apps.SensorReading;
-import window.EventTimeSessionWindow;
 
 public class WindowTest1_TimeWindow {
     public static void main(String[] args) throws Exception{

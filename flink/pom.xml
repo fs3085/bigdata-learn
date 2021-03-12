@@ -42,7 +42,7 @@
         <!-- https://mvnrepository.com/artifact/org.apache.flink/flink-table-planner-blink -->
         <dependency>
             <groupId>org.apache.flink</groupId>
-            <artifactId>flink-table-planner-blink_2.12</artifactId>
+            <artifactId>flink-table-planner-blink_2.11</artifactId>
             <version>1.12.0</version>
             <!--<scope>provided</scope>-->
         </dependency>
@@ -57,7 +57,7 @@
 
         <dependency>
             <groupId>org.apache.flink</groupId>
-            <artifactId>flink-hadoop-compatibility_2.12</artifactId>
+            <artifactId>flink-hadoop-compatibility_2.11</artifactId>
             <version>1.12.0</version>
         </dependency>
 
@@ -98,12 +98,6 @@
             <version>1.12.0</version>
         </dependency>
 
-        <dependency>
-            <groupId>org.apache.flink</groupId>
-            <artifactId>flink-connector-kafka_2.11</artifactId>
-            <version>1.12.0</version>
-        </dependency>
-
         <!--format-->
         <dependency>
             <groupId>org.apache.flink</groupId>
@@ -111,11 +105,6 @@
             <version>1.12.0</version>
         </dependency>
 
-        <dependency>
-            <groupId>org.apache.flink</groupId>
-            <artifactId>flink-json</artifactId>
-            <version>1.12.0</version>
-        </dependency>
 
         <!-- https://mvnrepository.com/artifact/org.apache.flink/flink-streaming-java -->
         <dependency>
@@ -155,7 +144,7 @@
         <!-- https://mvnrepository.com/artifact/org.apache.flink/flink-connector-kafka -->
         <dependency>
             <groupId>org.apache.flink</groupId>
-            <artifactId>flink-connector-kafka_2.12</artifactId>
+            <artifactId>flink-connector-kafka_2.11</artifactId>
             <version>1.12.0</version>
         </dependency>
 
@@ -164,6 +153,20 @@
             <groupId>redis.clients</groupId>
             <artifactId>jedis</artifactId>
             <version>3.2.0</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.apache.bahir/flink-connector-redis -->
+        <dependency>
+            <groupId>org.apache.bahir</groupId>
+            <artifactId>flink-connector-redis_2.11</artifactId>
+            <version>1.0</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.apache.flink/flink-connector-elasticsearch-base -->
+        <dependency>
+            <groupId>org.apache.flink</groupId>
+            <artifactId>flink-connector-elasticsearch-base_2.11</artifactId>
+            <version>1.12.0</version>
         </dependency>
 
 
