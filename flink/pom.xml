@@ -169,6 +169,12 @@
             <version>1.12.0</version>
         </dependency>
 
+        <dependency>
+            <groupId>com.alibaba.ververica</groupId>
+            <!-- add the dependency matching your database -->
+            <artifactId>flink-connector-mysql-cdc</artifactId>
+            <version>1.2.0</version>
+        </dependency>
 
     </dependencies>
 
