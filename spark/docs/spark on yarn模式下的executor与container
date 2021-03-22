@@ -1,0 +1,13 @@
+1.当运行在yarn集群上时，Yarn的ResourceMananger用来管理集群资源，集群上每个节点上的NodeManager用来管控所在节点的资源，
+从yarn的角度来看，每个节点看做可分配的资源池，当向ResourceManager请求资源时，它返回一些NodeManager信息，
+这些NodeManager将会提供execution container给你，每个execution container就是满足请求的堆大小的JVM进程，
+JVM进程的位置是由ResourceMananger管理的，不能自己控制，如果一个节点有64GB的内存被yarn管理（通过yarn.nodemanager.resource.memory-mb配置),
+当请求10个4G内存的executors时，这些executors可能运行在同一个节点上。
+
+2.当在集群上执行应用时，job会被切分成stages,每个stage切分成task,每个task单独调度，
+可以把executor的jvm进程看做task执行池，每个executor有 spark.executor.cores / spark.task.cpus execution 个执行槽
+
+3.task基本上就是spark的一个工作单元，作为exector的jvm进程中的一个线程执行，这也是为什么spark的job启动时间快的原因，
+在jvm中启动一个线程比启动一个单独的jvm进程块（在hadoop中执行mapreduce应用会启动多个jvm进程）
+
+总结：所以就是一个container对应一个JVM进程（也就是一个executor）

@@ -27,11 +27,17 @@ Flink App 抛出此类异常，通过查看日志，一般就是某一个 Flink 
 java.lang.NoClassDefFoundError: com/sun/jersey/core/util/FeaturesAndProperties
 解决办法进入 yarn中 把 lib 目中的一下两个问价拷贝到 flink 的 lib 中
 
+```
 hadoop/share/hadoop/yarn/lib/jersey-client-1.9.jar /hadoop/share/hadoop/yarn/lib/jersey-core-1.9.jar
+```
 
 5、Scala版本冲突
 
+```
 java.lang.NoSuchMethodError:scala.collection.immutable.HashSet$.empty()Lscala/collection/
+```
+
+
 解决办法，添加
 
 import org.apache.flink.api.scala._
@@ -43,6 +49,7 @@ Table is not an append一only table. Use the toRetractStream() in order to handl
 tableEnv.toRetractStream[Person](result).print()
 7、OOM 问题解决思路
 
+```
 java.lang.OutOfMemoryError: GC overhead limit exceeded
 java.lang.OutOfMemoryError: GC overhead limit exceeded
         at java.util.Arrays.copyOfRange(Arrays.java:3664)
@@ -51,6 +58,9 @@ java.lang.OutOfMemoryError: GC overhead limit exceeded
         at com.esotericsoftware.kryo.serializers.DefaultSerializers$StringSerializer.read(DefaultSerializers.java:177)
 ......
         at org.apache.flink.streaming.runtime.tasks.OperatorChain$CopyingChainingOutput.collect(OperatorChain.java:524)
+```
+
+
 解决方案：
 
 检查 slot 槽位够不够或者 slot 分配的数量有没有生效
@@ -58,11 +68,15 @@ java.lang.OutOfMemoryError: GC overhead limit exceeded
 检查flink程序有没有数据倾斜，可以通过 flink 的 ui 界面查看每个分区子节点处理的数据量
 8、解析返回值类型失败报错
 
+```
 The return type of function could not be determined automatically
 Exception in thread "main" org.apache.flink.api.common.functions.InvalidTypesException: The return type of function 'main(RemoteEnvironmentTest.java:27)' could not be determined automatically, due to type erasure. You can give type information hints by using the returns(...) method on the result of the transformation call, or by letting your function implement the 'ResultTypeQueryable' interface.
  at org.apache.flink.api.java.DataSet.getType(DataSet.java:178)
  at org.apache.flink.api.java.DataSet.collect(DataSet.java:410)
  at org.apache.flink.api.java.DataSet.print(DataSet.java:1652)
+```
+
+
 解决方案：产生这种现象的原因一般是使用 lambda 表达式没有明确返回值类型，或者使用特使的数据结构 flink 无法解析其类型，这时候我们需要在方法的后面添加返回值类型，比如字符串
 
 input.flatMap((Integer number, Collector<String> out) -> {
@@ -72,18 +86,26 @@ input.flatMap((Integer number, Collector<String> out) -> {
 .returns(Types.STRING)
 9、Hadoop jar 包冲突
 
+```
 Caused by: java.io.IOException: The given file system URI (hdfs:///data/checkpoint-data/abtest) did not describe the authority (like for example HDFS NameNode address/port or S3 host). The attempt to use a configured default authority failed: Hadoop configuration did not contain an entry for the default file system ('fs.defaultFS').
         at org.apache.flink.runtime.fs.hdfs.HadoopFsFactory.create(HadoopFsFactory.java:135)
         at org.apache.flink.core.fs.FileSystem.getUnguardedFileSystem(FileSystem.java:399)
         at org.apache.flink.core.fs.FileSystem.get(FileSystem.java:318)
         at org.apache.flink.core.fs.Path.getFileSystem(Path.java:298)
+```
+
+
 解决：pom 文件中去掉和 hadoop 相关的依赖就好了
 
 10、时钟不同步导致无法启动
 
 启动Flink任务的时候报错
 
+```
 Caused by: java.lang.RuntimeException: Couldn't deploy Yarn cluster
+```
+
+
 然后仔细看发现里面有这么一句
 
 system times on machines may be out of sync
