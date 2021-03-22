@@ -3,7 +3,11 @@
 
 原因是因为
 
+```
 checkpointConf.setCheckpointTimeout(8000L)
+```
+
+
 设置的太小了，默认是10min，这里只设置了8sec。
 
 当一个Flink App背压的时候（例如由外部组件异常引起），Barrier会流动的非常缓慢，导致Checkpoint时长飙升。
@@ -40,7 +44,10 @@ java.lang.NoSuchMethodError:scala.collection.immutable.HashSet$.empty()Lscala/co
 
 解决办法，添加
 
+```
 import org.apache.flink.api.scala._
+```
+
 6、没有使用回撤流报错
 
 Table is not an append一only table. Use the toRetractStream() in order to handle add and retract messages.
