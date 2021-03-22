@@ -1,0 +1,1 @@
+beeline -u jdbc:hive2://dxbigdata102:10000 -n hive
