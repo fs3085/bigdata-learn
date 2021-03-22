@@ -1,0 +1,985 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="ALL" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="a2701f21-ae57-441a-9e72-922dc146ee3f" name="Default Changelist" comment="更新docs和images目录">
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flink/docs/flink笔记.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/canal/配置文档/canal.md" beforeDir="false" afterPath="$PROJECT_DIR$/canal/docs/canal配置文档.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clickhouse/CK day01.xmind" beforeDir="false" afterPath="$PROJECT_DIR$/clickhouse/docs/CK day01.xmind" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clickhouse/clickhouse.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flink/docs/Flink 开发生产问题汇总.md" beforeDir="false" afterPath="$PROJECT_DIR$/flink/docs/Flink 开发生产问题汇总.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flink/docs/flink双流join.md" beforeDir="false" afterPath="$PROJECT_DIR$/flink/docs/flink双流join.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flink/docs/flink安装.md" beforeDir="false" afterPath="$PROJECT_DIR$/flink/docs/flink安装.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flink/src/main/java/Window/WindowTest1_TimeWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/flink/src/main/java/Window/WindowTest1_TimeWindow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flink/src/main/java/kafkajoinmysql/flink实时读取kafka数据关联mysql" beforeDir="false" afterPath="$PROJECT_DIR$/flink/src/main/java/kafkajoinmysql/flink实时读取kafka数据关联mysql.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flink/笔记.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flink1.10/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flink1.10/src/main/java/FlinkHive/FlinkReadHiveAndWriteMysql.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flink1.10/src/main/java/FlinkRedis/FlinkKafkaToRedis.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flink1.10/src/main/java/FlinkRedis/FlinkUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flink1.10/src/main/java/FlinkRedis/MyRedisSink.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flink1.10/src/main/java/FlinkRedis/RichFunction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flink1.10/src/main/java/FlinkRedis/flink-config.propertites" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flink1.10/src/main/java/ProcessFunctionAPI/KeyedProcessFunctions.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flink1.10/src/main/java/ProcessFunctionAPI/SideOutput.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flink1.10/src/main/java/RichFunctionAPI/RichFlatMapFunctions.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flink1.10/src/main/java/StateBackend/FsStateBackends.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flink1.10/src/main/java/Watermarks/WindowTest3_EventTimeWindow.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flink1.10/src/main/java/Window/WindowFunction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flink1.10/src/main/java/Window/WindowTest1_TimeWindow.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flink1.10/src/main/java/apps/MySensor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flink1.10/src/main/java/apps/SensorReading.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flink1.10/src/main/java/apps/SourceTest_MySensor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flink1.10/src/main/java/apps/test.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flink1.10/src/main/java/kafkajoinmysql/ActivityBean.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flink1.10/src/main/java/kafkajoinmysql/C01_DataToActivityBeanFunction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flink1.10/src/main/java/kafkajoinmysql/C01_QueryActivityName.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flink1.10/src/main/java/kafkajoinmysql/Producer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flink1.10/src/main/java/kafkajoinmysql/项目文档" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flink1.10/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flink1.10/src/main/scala/TableAPI/SensorReading.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flink1.10/src/main/scala/TableAPI/test01.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flink1.10/src/main/scala/window/EventTimeSessionWindow.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flink1.10/src/main/scala/window/SlidingEventTimeWindow.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flink1.10/src/main/scala/window/TumblingEventTimeWindow.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flink1.10/target/classes/FlinkRedis/FlinkKafkaToRedis$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flink1.10/target/classes/FlinkRedis/FlinkKafkaToRedis.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flink1.10/target/classes/FlinkRedis/FlinkUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flink1.10/target/classes/FlinkRedis/MyRedisSink.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flink1.10/target/classes/FlinkRedis/RichFunction.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flink1.10/target/classes/ProcessFunctionAPI/KeyedProcessFunctions$TempIncreaseWarning.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flink1.10/target/classes/ProcessFunctionAPI/KeyedProcessFunctions.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flink1.10/target/classes/ProcessFunctionAPI/SideOutput$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flink1.10/target/classes/ProcessFunctionAPI/SideOutput$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flink1.10/target/classes/ProcessFunctionAPI/SideOutput.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flink1.10/target/classes/RichFunctionAPI/RichFlatMapFunctions$TempIncreaseWarning.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flink1.10/target/classes/RichFunctionAPI/RichFlatMapFunctions.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flink1.10/target/classes/StateBackend/FsStateBackends.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flink1.10/target/classes/TableAPI/SensorReading$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flink1.10/target/classes/TableAPI/SensorReading.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flink1.10/target/classes/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flink1.10/target/classes/apps/MySensor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flink1.10/target/classes/apps/SensorReading.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flink1.10/target/classes/apps/SourceTest_MySensor$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flink1.10/target/classes/apps/SourceTest_MySensor$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flink1.10/target/classes/apps/SourceTest_MySensor$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flink1.10/target/classes/apps/SourceTest_MySensor$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flink1.10/target/classes/apps/SourceTest_MySensor$MyEsSinkFunction.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flink1.10/target/classes/apps/SourceTest_MySensor$MyJdbcSink.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flink1.10/target/classes/apps/SourceTest_MySensor$MyMapFunction.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flink1.10/target/classes/apps/SourceTest_MySensor$MyRedisMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flink1.10/target/classes/apps/SourceTest_MySensor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flink1.10/target/classes/apps/test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flink1.10/target/classes/kafkajoinmysql/ActivityBean.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flink1.10/target/classes/kafkajoinmysql/C01_DataToActivityBeanFunction.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flink1.10/target/classes/kafkajoinmysql/C01_QueryActivityName.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flink1.10/target/classes/window/EventTimeSessionWindow$$anon$2$$anon$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flink1.10/target/classes/window/EventTimeSessionWindow$$anon$2$$anonfun$createSerializer$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flink1.10/target/classes/window/EventTimeSessionWindow$$anon$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flink1.10/target/classes/window/EventTimeSessionWindow$$anon$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flink1.10/target/classes/window/EventTimeSessionWindow$$anonfun$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flink1.10/target/classes/window/EventTimeSessionWindow$$anonfun$main$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flink1.10/target/classes/window/EventTimeSessionWindow$$anonfun$main$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flink1.10/target/classes/window/EventTimeSessionWindow$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flink1.10/target/classes/window/EventTimeSessionWindow.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flink1.10/target/classes/window/SlidingEventTimeWindow$$anon$2$$anon$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flink1.10/target/classes/window/SlidingEventTimeWindow$$anon$2$$anonfun$createSerializer$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flink1.10/target/classes/window/SlidingEventTimeWindow$$anon$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flink1.10/target/classes/window/SlidingEventTimeWindow$$anon$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flink1.10/target/classes/window/SlidingEventTimeWindow$$anon$5$$anon$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flink1.10/target/classes/window/SlidingEventTimeWindow$$anon$5.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flink1.10/target/classes/window/SlidingEventTimeWindow$$anonfun$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flink1.10/target/classes/window/SlidingEventTimeWindow$$anonfun$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flink1.10/target/classes/window/SlidingEventTimeWindow$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flink1.10/target/classes/window/SlidingEventTimeWindow.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flink1.10/target/classes/window/TumblingEventTimeWindow$$anon$2$$anon$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flink1.10/target/classes/window/TumblingEventTimeWindow$$anon$2$$anonfun$createSerializer$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flink1.10/target/classes/window/TumblingEventTimeWindow$$anon$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flink1.10/target/classes/window/TumblingEventTimeWindow$$anon$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flink1.10/target/classes/window/TumblingEventTimeWindow$$anon$5$$anon$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flink1.10/target/classes/window/TumblingEventTimeWindow$$anon$5.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flink1.10/target/classes/window/TumblingEventTimeWindow$$anonfun$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flink1.10/target/classes/window/TumblingEventTimeWindow$$anonfun$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flink1.10/target/classes/window/TumblingEventTimeWindow$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flink1.10/target/classes/window/TumblingEventTimeWindow.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flink1.10/笔记.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hbase/hbase笔记.sql" beforeDir="false" afterPath="$PROJECT_DIR$/hbase/docs/hbase笔记.md" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="bigdatalearn" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Scala Object" />
+        <option value="Scala Class" />
+        <option value="FxmlFile" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>tableLineage</find>
+      <find>flink-table-api-java</find>
+      <find>flink-table</find>
+      <find>flink-clients</find>
+      <find>mysql-connector-java</find>
+      <find>hive-metastore</find>
+      <find>ive-exec</find>
+      <find>hive-exec</find>
+      <find>flink-shaded-hadoop2</find>
+      <find>flink-hadoop-compatibility_2.12</find>
+      <find>flink-clients_2.12</find>
+      <find>mysql</find>
+      <find>flink-core</find>
+      <find>flink-connector-jdbc_2.11</find>
+      <find>flink-connector-kafka_2.11</find>
+      <find>config.version</find>
+      <find>redis</find>
+      <find>flink-connector-kafka</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/hive/docs/用mysql变量实现lag函数功能.md" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/flink/src/main/scala/RedisUtilsDemo.scala" />
+        <option value="$PROJECT_DIR$/flink/src/main/scala/a.java" />
+        <option value="$PROJECT_DIR$/xysh_flink1.12/src/main/java/AtomicReference/SimpleObject.java" />
+        <option value="$PROJECT_DIR$/xysh_flink1.12/src/main/java/AtomicReference/AtomicReferenceTest.java" />
+        <option value="$PROJECT_DIR$/hbase/pom.xml" />
+        <option value="$PROJECT_DIR$/hbase/src/main/java/MR/HBase_MapReduce1/ReadFruitMapper.java" />
+        <option value="$PROJECT_DIR$/hbase/src/main/java/MR/HBase_MapReduce1/WriteFruitMRReducer.java" />
+        <option value="$PROJECT_DIR$/hbase/src/main/java/MR/HBase_MapReduce1/Fruit2FruitMRRunner.java" />
+        <option value="$PROJECT_DIR$/flink/src/main/java/Window/WindowFunction.java" />
+        <option value="$PROJECT_DIR$/xysh_flink1.12/src/main/java/Catalog/FlinkHive.java" />
+        <option value="$PROJECT_DIR$/hbase/src/main/java/com/ywf/utils/HBaseUtil.java" />
+        <option value="$PROJECT_DIR$/hbase/src/main/java/com/ywf/dao/HBaseDao.java" />
+        <option value="$PROJECT_DIR$/hbase/src/main/java/com/ywf/constants/Constants.java" />
+        <option value="$PROJECT_DIR$/spark/src/main/scala/Spark消费Kafka并手动维护偏移量到Mysql/SparkProducer.scala" />
+        <option value="$PROJECT_DIR$/spark/src/main/scala/spark_offset/SparkProducer.scala" />
+        <option value="$PROJECT_DIR$/spark/pom.xml" />
+        <option value="$PROJECT_DIR$/spark/src/main/scala/spark_offset/OffsetUtil.scala" />
+        <option value="$PROJECT_DIR$/spark/src/main/scala/spark_offset/SparkOffset.scala" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/flink/src/main/java/FlinkRedis/FlinkUtil.java" />
+        <option value="$PROJECT_DIR$/flink/src/main/java/FlinkRedis/FlinkKafkaToRedis.java" />
+        <option value="$PROJECT_DIR$/flink/src/main/java/ProcessFunctionAPI/KeyedProcessFunctions.java" />
+        <option value="$PROJECT_DIR$/flink/src/main/java/kafkajoinmysql/C01_QueryActivityName.java" />
+        <option value="$PROJECT_DIR$/flink/src/main/java/ProcessFunctionAPI/ProcessFunction" />
+        <option value="$PROJECT_DIR$/flink/src/main/java/Catalog/FlinkHive.java" />
+        <option value="$PROJECT_DIR$/flink/src/main/java/Catalog/JdbcTable.java" />
+        <option value="$PROJECT_DIR$/flink/src/main/java/Catalog/KafkaTable.java" />
+        <option value="$PROJECT_DIR$/flink1.10/pom.xml" />
+        <option value="$PROJECT_DIR$/flink/src/main/java/Split_SelectAndSide_Outputs/PersonInfo.java" />
+        <option value="$PROJECT_DIR$/flink/src/main/java/Split_SelectAndSide_Outputs/a.java" />
+        <option value="$PROJECT_DIR$/flink/src/main/java/Split_SelectAndSide_Outputs/概述" />
+        <option value="$PROJECT_DIR$/flink/src/main/java/apps/SourceTest_MySensor.java" />
+        <option value="$PROJECT_DIR$/flink1.10/笔记" />
+        <option value="$PROJECT_DIR$/flink1.10/a.sql" />
+        <option value="$PROJECT_DIR$/flink1.10/笔记.sql" />
+        <option value="$PROJECT_DIR$/flink/笔记.sql" />
+        <option value="$PROJECT_DIR$/hbase/hbase笔记.sql" />
+        <option value="$PROJECT_DIR$/flink/Flink 开发生产问题汇总.md" />
+        <option value="$PROJECT_DIR$/flink1.10/src/main/java/MySqlBinlogSourceExample2.java" />
+        <option value="$PROJECT_DIR$/flink/pom.xml" />
+        <option value="$PROJECT_DIR$/flink/src/main/java/MySqlBinlogSourceExample2.java" />
+        <option value="$PROJECT_DIR$/flink/src/main/java/Flink_CDC/flinkcdc探索.sql" />
+        <option value="$PROJECT_DIR$/flink/flink安装.sql" />
+        <option value="$PROJECT_DIR$/flink/images/scriptFile.scala" />
+        <option value="$PROJECT_DIR$/flink/docs/flink安装.sql" />
+        <option value="$PROJECT_DIR$/spark/docs/spark on yarn模式下的executor与container" />
+        <option value="$PROJECT_DIR$/flink1.10/a.md" />
+        <option value="$PROJECT_DIR$/flink/src/main/java/Split_SelectAndSide_Outputs/SplitSelectTest.java" />
+        <option value="$PROJECT_DIR$/flink/docs/flink实战--双流join之原理解析" />
+        <option value="$PROJECT_DIR$/flink/docs/flink双流join.md" />
+        <option value="$PROJECT_DIR$/flink/src/main/java/Window/WindowTest1_TimeWindow.java" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="D:\Maven\apache-maven-3.6.1" />
+        <option name="userSettingsFile" value="D:\Maven\apache-maven-3.6.1\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="flink" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="flink" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-1928" />
+    <option name="y" value="-194" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
+  </component>
+  <component name="ProjectId" id="1q6o2YZNMHjDY6PiLeBW63f7keY" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="bigdata-learn" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bigdata-learn" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bigdata-learn" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bigdata-learn" type="462c0819:PsiDirectoryNode" />
+              <item name="flink" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bigdata-learn" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bigdata-learn" type="462c0819:PsiDirectoryNode" />
+              <item name="flink" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bigdata-learn" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bigdata-learn" type="462c0819:PsiDirectoryNode" />
+              <item name="flink" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bigdata-learn" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bigdata-learn" type="462c0819:PsiDirectoryNode" />
+              <item name="flink" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bigdata-learn" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bigdata-learn" type="462c0819:PsiDirectoryNode" />
+              <item name="flink" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="Split_SelectAndSide_Outputs" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bigdata-learn" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bigdata-learn" type="462c0819:PsiDirectoryNode" />
+              <item name="flink" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="Window" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="SearchEverywhereHistoryKey" value="JobContext&#9;PSI&#9;JAVA://org.apache.hadoop.mapred.JobContext&#10;ExecutorFactory&#9;FILE&#9;jar://D:/Maven_Repo/org/apache/flink/flink-table-api-java/1.10.1/flink-table-api-java-1.10.1.jar!/org/apache/flink/table/delegation/ExecutorFactory.class" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1616402024550" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.56436783" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
+    <property name="two.files.diff.last.used.folder" value="$PROJECT_DIR$/flink/src/main/scala" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="SqlApI" />
+      <recent name="apps" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\github\bigdata-learn\flink\images" />
+      <recent name="D:\github\bigdata-learn\flink\src\main\java\Flink_CDC" />
+      <recent name="D:\github\bigdata-learn\flink1.10" />
+      <recent name="D:\github\bigdata-learn\flink\src\main\java" />
+      <recent name="D:\github\bigdata-learn\flink\src\main\resources" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\github\bigdata-learn\clickhouse\docs" />
+      <recent name="D:\github\bigdata-learn\hbase\docs" />
+      <recent name="D:\github\bigdata-learn\hive\images" />
+      <recent name="D:\github\bigdata-learn\flink\docs" />
+      <recent name="D:\github\bigdata-learn\flink\src\main\java" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Unnamed" type="Application" factoryName="Application" nameIsGenerated="true">
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a2701f21-ae57-441a-9e72-922dc146ee3f" name="Default Changelist" comment="" />
+      <created>1608694756974</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1608694756974</updated>
+    </task>
+    <task id="LOCAL-00001" summary="first update">
+      <created>1615352465959</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1615352465959</updated>
+    </task>
+    <task id="LOCAL-00002" summary="spark update">
+      <created>1615356865065</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1615356865065</updated>
+    </task>
+    <task id="LOCAL-00003" summary="1、Spark学习资料文档&#10;2、Spark消费Kafka并手动维护偏移量到Mysql">
+      <created>1615359872937</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1615359872937</updated>
+    </task>
+    <task id="LOCAL-00004" summary="1、Spark学习资料文档&#10;2、canal文档">
+      <created>1615369051900</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1615369051900</updated>
+    </task>
+    <task id="LOCAL-00005" summary="1、Spark学习资料文档&#10;2、canal文档">
+      <created>1615369223296</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1615369223296</updated>
+    </task>
+    <task id="LOCAL-00006" summary="update flink">
+      <created>1615430612445</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1615430612445</updated>
+    </task>
+    <task id="LOCAL-00007" summary="update flink Spilt-Select和Side-Outputs">
+      <created>1615521066285</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1615521066285</updated>
+    </task>
+    <task id="LOCAL-00008" summary="update flink笔记 clickhouse模块 hbase笔记">
+      <created>1615860216671</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1615860216671</updated>
+    </task>
+    <task id="LOCAL-00009" summary="update">
+      <created>1616150999623</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1616150999623</updated>
+    </task>
+    <task id="LOCAL-00010" summary="update">
+      <created>1616388839018</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1616388839018</updated>
+    </task>
+    <task id="LOCAL-00011" summary="update">
+      <created>1616394874832</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1616394874832</updated>
+    </task>
+    <task id="LOCAL-00012" summary="update">
+      <created>1616395505737</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1616395505738</updated>
+    </task>
+    <task id="LOCAL-00013" summary="window增量/全量聚合函数，其它可选API">
+      <created>1616400887140</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1616400887140</updated>
+    </task>
+    <task id="LOCAL-00014" summary="update">
+      <created>1616410065901</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1616410065901</updated>
+    </task>
+    <task id="LOCAL-00015" summary="更新docs和images目录">
+      <created>1616421607967</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1616421607967</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
+    <servers />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-1928" y="-194" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.58476657" visible="true" weight="0.17377399" />
+      <window_info id="Structure" order="1" sideWeight="0.41666666" side_tool="true" weight="0.17377399" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" sideWeight="0.4152334" side_tool="true" visible="true" weight="0.17377399" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.5123153" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.0" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.45227766" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Terminal" order="6" sideWeight="0.49840087" visible="true" weight="0.116178066" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50159913" side_tool="true" visible="true" weight="0.116178066" />
+      <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Messages" order="9" weight="0.32790446" />
+      <window_info anchor="bottom" id="TODO" order="10" sideWeight="0.49946696" weight="0.49837133" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.24962178" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Palette&#9;" order="6" />
+      <window_info anchor="right" id="Maven Projects" order="7" weight="0.0" />
+    </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.58627087" visible="true" weight="0.24281392" />
+      <window_info id="Structure" order="1" sideWeight="0.41372913" side_tool="true" weight="0.2397882" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" sideWeight="0.41420117" side_tool="true" weight="0.2397882" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.5123153" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.0" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.45227766" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Terminal" order="6" sideWeight="0.49924356" weight="0.44006568" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50075644" side_tool="true" weight="0.52545154" />
+      <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Messages" order="9" weight="0.32790446" />
+      <window_info anchor="bottom" id="TODO" order="10" weight="0.49917898" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.24962178" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Palette&#9;" order="6" />
+      <window_info anchor="right" id="Maven Projects" order="7" weight="0.0" />
+    </layout-to-restore>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="first update" />
+    <MESSAGE value="spark update" />
+    <MESSAGE value="1、Spark学习资料文档&#10;2、Spark消费Kafka并手动维护偏移量到Mysql" />
+    <MESSAGE value="1、Spark学习资料文档&#10;2、canal文档" />
+    <MESSAGE value="update flink" />
+    <MESSAGE value="update flink Spilt-Select和Side-Outputs" />
+    <MESSAGE value="update flink笔记 clickhouse模块 hbase笔记" />
+    <MESSAGE value="window增量/全量聚合函数，其它可选API" />
+    <MESSAGE value="update" />
+    <MESSAGE value="更新docs和images目录" />
+    <option name="LAST_COMMIT_MESSAGE" value="更新docs和images目录" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/flink/src/main/java/kafkajoinmysql/ActivityBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flink/src/main/java/kafkajoinmysql/C01_QueryActivityName.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flink/src/main/java/kafkajoinmysql/Producer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="10" column="2" selection-start-line="10" selection-start-column="2" selection-end-line="10" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flink/src/main/java/Catalog/KafkaTable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flink/src/main/java/kafkajoinmysql/flink实时读取kafka数据关联mysql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flink1.10/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1242">
+          <caret line="102" column="24" selection-start-line="102" selection-start-column="24" selection-end-line="102" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flink/src/main/java/ProcessFunctionAPI/SideOutput.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flink/src/main/java/ProcessFunctionAPI/KeyedProcessFunctions.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-184">
+          <caret line="29" selection-start-line="29" selection-end-line="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flink1.10/笔记" />
+    <entry file="file://$PROJECT_DIR$/flink/src/main/java/apps/SourceTest_MySensor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2300">
+          <caret line="134" column="46" selection-start-line="134" selection-start-column="46" selection-end-line="134" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flink/src/main/java/Split_SelectAndSide_Outputs/PersonInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="710">
+          <caret line="41" column="1" selection-start-line="41" selection-start-column="1" selection-end-line="41" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/flink/flink-core/1.12.0/flink-core-1.12.0.jar!/org/apache/flink/util/OutputTag.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="22" column="11" selection-start-line="22" selection-start-column="11" selection-end-line="22" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flink/src/main/java/Watermarks/WindowTest3_EventTimeWindow.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/clickhouse/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="14" column="10" lean-forward="true" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hbase/src/main/java/MR/HBase_MapReduce1/Fruit2FruitMRRunner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-223" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hbase/src/main/java/MR/HBase_MapReduce1/ReadFruitMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-154">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hbase/src/main/java/MR/HBase_MapReduce1/WriteFruitMRReducer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/canal/配置文档/canal.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/canal/src/main/java/apps/CanalClientTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="17" column="30" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hbase/hbase笔记.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="8" column="8" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flink/src/main/java/Catalog/FlinkHive.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="25" column="32" selection-start-line="25" selection-start-column="32" selection-end-line="25" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flink/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="239">
+          <caret line="176" column="21" selection-start-line="176" selection-start-column="21" selection-end-line="176" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flink1.10/src/main/java/apps/MySensor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="16" column="9" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flink/src/main/java/Catalog/JdbcTable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="10" column="16" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flink/src/main/java/MySqlBinlogSourceExample2.java" />
+    <entry file="file://$PROJECT_DIR$/flink/src/main/java/SqlApI/CustomerStatusChangedEvent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flink/src/main/java/SqlApI/KafkaTableStreamApiProducerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-460">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flink/src/main/java/Flink_CDC/mysql_flinkcdc_es.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flink/images/scriptFile.scala" />
+    <entry file="file://$PROJECT_DIR$/flink/src/main/java/Flink_CDC/flinkcdc探索.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="16" selection-start-column="16" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flink1.10/企业微信截图_16159761476349.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flink/images/flink_session_per-job_mod.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flink/images/app_mode.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spark/docs/1.md" />
+    <entry file="file://$PROJECT_DIR$/flink1.10/a" />
+    <entry file="file://$PROJECT_DIR$/flink1.10/a.md" />
+    <entry file="file://$PROJECT_DIR$/flink/src/main/java/ProcessFunctionAPI/ProcessFunction">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="14" column="25" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flink/docs/Flink on YARN部署模式.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="529">
+          <caret line="23" column="24" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spark/docs/spark on yarn模式下的executor与container">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flink/docs/Flink 开发生产问题汇总.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="13" column="25" lean-forward="true" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flink/docs/flink双流join.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="7" column="64" lean-forward="true" selection-end-line="7" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flink/docs/flink双流join.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flink/docs/flink安装.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="45" selection-start-column="45" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flink1.10/笔记.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="828">
+          <caret line="51" column="18" selection-start-line="51" selection-start-column="18" selection-end-line="51" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flink1.10/src/main/java/Window/WindowTest1_TimeWindow.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flink1.10/src/main/java/Window/WindowFunction.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flink/笔记.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="1" column="31" selection-start-line="1" selection-start-column="31" selection-end-line="1" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flink/src/main/java/Split_SelectAndSide_Outputs/概述">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="4" column="26" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flink/src/main/java/Window/WindowFunction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="8" column="28" lean-forward="true" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flink/src/main/java/Window/WindowTest1_TimeWindow.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="713">
+          <caret line="103" column="47" lean-forward="true" selection-start-line="103" selection-start-column="47" selection-end-line="103" selection-end-column="47" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#4213#4771#0" expanded="true" />
+            <element signature="e#4770#4771#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flink/src/main/java/Split_SelectAndSide_Outputs/SplitSelectTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="711">
+          <caret line="68" column="48" selection-start-line="68" selection-start-column="48" selection-end-line="68" selection-end-column="67" />
+          <folding>
+            <element signature="e#2540#3023#0" expanded="true" />
+            <element signature="e#3022#3023#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.56436783" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.56436783" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>scala-sdk-2.11.12</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.56436783" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.56436783" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>flink</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.56436783" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>scala-sdk-2.11.12</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.56436783" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

@@ -1,9 +1,0 @@
-topics=test
-group.id=redis
-bootstrap.servers=hadoop101:9092
-auto.offset.reset=earliest
-enable.auto.commit=false
-checkpoint.interval=10000
-redis.host=hadoop101
-redis.pwd=""
-redis.db=0

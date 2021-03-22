@@ -3,7 +3,7 @@
 
 原因是因为
 
-```
+```scala
 checkpointConf.setCheckpointTimeout(8000L)
 ```
 
@@ -17,7 +17,7 @@ checkpointConf.setCheckpointTimeout(8000L)
 在Flink中，资源的隔离是通过Slot进行的，也就是说多个Slot会运行在同一个JVM中，这种隔离很弱，尤其对于生产环境。Flink App上线之前要在一个单独的Flink集群上进行测试，否则一个不稳定、存在问题的Flink App上线，很可能影响整个Flink集群上的App。
 3、资源不足导致 container 被 kill
 
-`The assigned slot container_container编号 was removed.`
+The assigned slot container_container编号 was removed.
 Flink App 抛出此类异常，通过查看日志，一般就是某一个 Flink App 内存占用大，导致 TaskManager（在 Yarn 上就是 Container ）被Kill 掉。
 
 但是并不是所有的情况都是这个原因，还需要进一步看 yarn 的日志（ 查看 yarn 任务日志：yarn logs -applicationId  -appOwner），如果代码写的没问题，就确实是资源不够了，其实 1G Slot 跑多个Task（ Slot Group Share ）其实挺容易出现的。
@@ -28,7 +28,11 @@ Flink App 抛出此类异常，通过查看日志，一般就是某一个 Flink 
 通过 slotSharingGroup("xxx") ，减少 Slot 中共享 Task 的个数
 4、启动报错，提示找不到 jersey 的类
 
+```
 java.lang.NoClassDefFoundError: com/sun/jersey/core/util/FeaturesAndProperties
+```
+
+
 解决办法进入 yarn中 把 lib 目中的一下两个问价拷贝到 flink 的 lib 中
 
 ```
@@ -44,7 +48,7 @@ java.lang.NoSuchMethodError:scala.collection.immutable.HashSet$.empty()Lscala/co
 
 解决办法，添加
 
-```
+```scala
 import org.apache.flink.api.scala._
 ```
 
@@ -53,7 +57,10 @@ import org.apache.flink.api.scala._
 Table is not an append一only table. Use the toRetractStream() in order to handle add and retract messages.
 这个是因为动态表不是 append-only 模式的，需要用 toRetractStream ( 回撤流) 处理就好了.
 
+```scala
 tableEnv.toRetractStream[Person](result).print()
+```
+
 7、OOM 问题解决思路
 
 ```
@@ -86,11 +93,14 @@ Exception in thread "main" org.apache.flink.api.common.functions.InvalidTypesExc
 
 解决方案：产生这种现象的原因一般是使用 lambda 表达式没有明确返回值类型，或者使用特使的数据结构 flink 无法解析其类型，这时候我们需要在方法的后面添加返回值类型，比如字符串
 
+```scala
 input.flatMap((Integer number, Collector<String> out) -> {
  ......
 })
 // 提供返回值类型
 .returns(Types.STRING)
+```
+
 9、Hadoop jar 包冲突
 
 ```
@@ -115,5 +125,10 @@ Caused by: java.lang.RuntimeException: Couldn't deploy Yarn cluster
 
 然后仔细看发现里面有这么一句
 
+```
 system times on machines may be out of sync
+```
+
+
 意思说是机器上的系统时间可能不同步。同步集群机器时间即可。
+

@@ -105,10 +105,10 @@ public class WindowTest1_TimeWindow {
          .getSideOutput() —— 获取侧输出流
          **/
         dataStream.keyBy("id")
-                  .timeWindow(Time.secondes(15))
-                  .trigger()
-                  .evictor()
-                  .allowedLateness(Time.minutes(1))
+                  .timeWindow(Time.seconds(5))
+//                  .trigger()
+//                  .evictor()
+                  .allowedLateness(Time.minutes(1));
 
 
         env.execute();
