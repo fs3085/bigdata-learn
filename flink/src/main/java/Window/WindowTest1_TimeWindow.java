@@ -76,9 +76,11 @@ public class WindowTest1_TimeWindow {
 //                                            return null;
 //                                        }
 //                                    })
-                // 2. 全窗口函数
 //                                        .process(new ProcessWindowFunction<SensorReading, Object, Tuple, TimeWindow>() {
 //                                        })
+                  // 2. 全窗口函数
+                                        //Tuple key的信息
+                                        //TimeWindow 窗口信息
                                         .apply(new WindowFunction<SensorReading, Integer, Tuple, TimeWindow>() {
                                             @Override
                                             public void apply(Tuple tuple, TimeWindow timeWindow, Iterable<SensorReading> input, Collector<Integer> out) throws Exception {
@@ -91,6 +93,23 @@ public class WindowTest1_TimeWindow {
 //                  .window(TumblingEventTimeWindows.of(Time.seconds(15)))
 
 //        new WindowAssigner
+
+                //3. 其它可选API
+        /**
+         .trigger() —— 触发器
+         定义 window 什么时候关闭，触发计算并输出结果
+         .evitor() —— 移除器
+         定义移除某些数据的逻辑
+         .allowedLateness() —— 允许处理迟到的数据
+         .sideOutputLateData() —— 将迟到的数据放入侧输出流
+         .getSideOutput() —— 获取侧输出流
+         **/
+        dataStream.keyBy("id")
+                  .timeWindow(Time.secondes(15))
+                  .trigger()
+                  .evictor()
+                  .allowedLateness(Time.minutes(1))
+
 
         env.execute();
     }
