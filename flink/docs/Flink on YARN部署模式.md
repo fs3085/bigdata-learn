@@ -8,7 +8,7 @@ Per-Job模式
 存在的问题
 上文所述Session模式和Per-Job模式可以用如下的简图表示，其中红色、蓝色和绿色的图形代表不同的作业。
 
-![img](http://imgconvert.csdnimg.cn/aHR0cHM6Ly91cGxvYWQtaW1hZ2VzLmppYW5zaHUuaW8vdXBsb2FkX2ltYWdlcy8xOTUyMzAtNzQzOTA5YTIxMGYzZDIzYS5wbmc?x-oss-process=image/format,png)
+![img](https://github.com/fs3085/bigdata-learn/blob/main/flink/images/app_mode.png)
 
 
 Deployer代表向YARN集群发起部署请求的节点，一般来讲在生产环境中，也总有这样一个节点作为所有作业的提交入口（即客户端）。在main()方法开始执行直到env.execute()方法之前，客户端也需要做一些工作，即：
