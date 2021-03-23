@@ -49,8 +49,8 @@ public class FlinkHive {
         tableEnv.listTables();
 
 
-        Table sqlResult = tableEnv.sqlQuery("select * from mt.a");
-        tableEnv.executeSql("insert overwrite `table` sang partition(`data_date` = '20200122') select id,name from sang where data_date='20201221'");
+        Table sqlResult = tableEnv.sqlQuery("select * from wcl_dwh.dwd_card_acct_cu limit 10");
+        //tableEnv.executeSql("insert overwrite `table` sang partition(`data_date` = '20200122') select id,name from sang where data_date='20201221'");
 
         DataStream<Row> rowDataStream = tableEnv.toAppendStream(sqlResult, Row.class);
 

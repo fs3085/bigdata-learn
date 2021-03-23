@@ -176,6 +176,17 @@
             <version>1.2.0</version>
         </dependency>
 
+        <dependency>
+            <groupId>org.apache.flink</groupId>
+            <artifactId>flink-orc-nohive_2.11</artifactId>
+            <version>1.12.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.flink</groupId>
+            <artifactId>flink-statebackend-rocksdb_2.11</artifactId>
+            <version>1.12.0</version>
+        </dependency>
     </dependencies>
 
 </project>
