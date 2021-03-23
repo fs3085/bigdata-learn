@@ -25,7 +25,7 @@ import java.util.Collection;
 import apps.SensorReading;
 
 public class WindowTest1_TimeWindow {
-    public static void main(String[] args) throws Exception{
+    public static void main(String[] args) throws Exception {
         StreamExecutionEnvironment env = StreamExecutionEnvironment.getExecutionEnvironment();
         env.setParallelism(1);
         DataStream<String> inputStream = env.socketTextStream("192.168.1.101", 7777);
@@ -38,14 +38,23 @@ public class WindowTest1_TimeWindow {
 
         // 其他可选API
         //lamdal架构
+        /**
+         .trigger() —— 触发器
+         定义 window 什么时候关闭，触发计算并输出结果
+         .evitor() —— 移除器
+         定义移除某些数据的逻辑
+         .allowedLateness() —— 允许处理迟到的数据
+         .sideOutputLateData() —— 将迟到的数据放入侧输出流
+         .getSideOutput() —— 获取侧输出流
+         **/
         OutputTag<SensorReading> outputTag = new OutputTag<SensorReading>("late") {
         };
         SingleOutputStreamOperator<SensorReading> sumStream = dataStream.keyBy("id")
 //                  .window(EventTimeSessionWindows.withGap(Time.minutes(1)));
-                                                                        .timeWindow(Time.seconds(15))
-                                                                        .allowedLateness(Time.minutes(1))
-                                                                        .sideOutputLateData(outputTag)
-                                                                        .sum("temperature");
+                .timeWindow(Time.seconds(15))
+                .allowedLateness(Time.minutes(1)) //窗口不关闭，数据存储在内存中，Setting an allowed lateness is only valid for event-time windows.
+                .sideOutputLateData(outputTag)
+                .sum("temperature");
 
         sumStream.getSideOutput(outputTag).print("late");
 
@@ -53,8 +62,8 @@ public class WindowTest1_TimeWindow {
         // 开窗测试
         dataStream.keyBy("id")
 //                  .window(EventTimeSessionWindows.withGap(Time.minutes(1)));
-                  .timeWindow(Time.seconds(15))
-                  // 1. 增量聚合函数
+                .timeWindow(Time.seconds(15))
+                // 1. 增量聚合函数
 //                                              .aggregate(new AggregateFunction<SensorReading, Integer, Integer>() {
 //                                        @Override
 //                                        public Integer createAccumulator() {
@@ -78,37 +87,21 @@ public class WindowTest1_TimeWindow {
 //                                    })
 //                                        .process(new ProcessWindowFunction<SensorReading, Object, Tuple, TimeWindow>() {
 //                                        })
-                  // 2. 全窗口函数
-                                        //Tuple key的信息
-                                        //TimeWindow 窗口信息
-                                        .apply(new WindowFunction<SensorReading, Integer, Tuple, TimeWindow>() {
-                                            @Override
-                                            public void apply(Tuple tuple, TimeWindow timeWindow, Iterable<SensorReading> input, Collector<Integer> out) throws Exception {
-                                                Integer count = IteratorUtils.toList(input.iterator()).size();
-                                                out.collect(count);
-                                            }
-                                        });
+                // 2. 全窗口函数
+                //Tuple key的信息
+                //TimeWindow 窗口信息
+                .apply(new WindowFunction<SensorReading, Integer, Tuple, TimeWindow>() {
+                    @Override
+                    public void apply(Tuple tuple, TimeWindow timeWindow, Iterable<SensorReading> input, Collector<Integer> out) throws Exception {
+                        Integer count = IteratorUtils.toList(input.iterator()).size();
+                        out.collect(count);
+                    }
+                });
 
 
 //                  .window(TumblingEventTimeWindows.of(Time.seconds(15)))
 
 //        new WindowAssigner
-
-                //3. 其它可选API
-        /**
-         .trigger() —— 触发器
-         定义 window 什么时候关闭，触发计算并输出结果
-         .evitor() —— 移除器
-         定义移除某些数据的逻辑
-         .allowedLateness() —— 允许处理迟到的数据
-         .sideOutputLateData() —— 将迟到的数据放入侧输出流
-         .getSideOutput() —— 获取侧输出流
-         **/
-        dataStream.keyBy("id")
-                  .timeWindow(Time.seconds(5))
-//                  .trigger()
-//                  .evictor()
-                  .allowedLateness(Time.minutes(1));
 
 
         env.execute();
