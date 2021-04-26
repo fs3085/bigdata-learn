@@ -8,7 +8,7 @@ Per-Job模式
 存在的问题
 上文所述Session模式和Per-Job模式可以用如下的简图表示，其中红色、蓝色和绿色的图形代表不同的作业。
 
-![img](https://github.com/fs3085/bigdata-learn/blob/main/flink/images/app_mode.png)
+
 
 
 Deployer代表向YARN集群发起部署请求的节点，一般来讲在生产环境中，也总有这样一个节点作为所有作业的提交入口（即客户端）。在main()方法开始执行直到env.execute()方法之前，客户端也需要做一些工作，即：
@@ -19,9 +19,6 @@ Deployer代表向YARN集群发起部署请求的节点，一般来讲在生产�
 只有在这些都完成之后，才会通过env.execute()方法触发Flink运行时真正地开始执行作业。试想，如果所有用户都在Deployer上提交作业，较大的依赖会消耗更多的带宽，而较复杂的作业逻辑翻译成JobGraph也需要吃掉更多的CPU和内存，客户端的资源反而会成为瓶颈——不管Session还是Per-Job模式都存在此问题。为了解决它，社区在传统部署模式的基础上实现了Application模式。
 
 Application模式
-此模式下的作业提交框图如下。
-
-![img](http://imgconvert.csdnimg.cn/aHR0cHM6Ly91cGxvYWQtaW1hZ2VzLmppYW5zaHUuaW8vdXBsb2FkX2ltYWdlcy8xOTUyMzAtMzVlMDVhNWQzMDlkOTUzYy5wbmc?x-oss-process=image/format,png)
 
 
 可见，原本需要客户端做的三件事被转移到了JobManager里，也就是说main()方法在集群中执行（入口点位于ApplicationClusterEntryPoint），Deployer只需要负责发起部署请求了。另外，如果一个main()方法中有多个env.execute()/executeAsync()调用，在Application模式下，这些作业会被视为属于同一个应用，在同一个集群中执行（如果在Per-Job模式下，就会启动多个集群）。可见，Application模式本质上是Session和Per-Job模式的折衷。
