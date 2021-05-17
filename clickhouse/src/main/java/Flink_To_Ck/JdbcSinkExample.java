@@ -1,4 +1,4 @@
-package flink_to_ck;
+package Flink_To_Ck;
 
 import org.apache.flink.connector.jdbc.JdbcConnectionOptions;
 import org.apache.flink.connector.jdbc.JdbcExecutionOptions;

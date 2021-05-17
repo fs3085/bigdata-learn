@@ -1,10 +1,8 @@
-package flink_to_ck;
+package Flink_To_Ck;
 
 import com.alibaba.fastjson.JSON;
-import flink_to_ck.Ck;
 import org.apache.kafka.clients.producer.KafkaProducer;
 import org.apache.kafka.clients.producer.ProducerRecord;
-
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Properties;

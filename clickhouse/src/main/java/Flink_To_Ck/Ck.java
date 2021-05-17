@@ -1,4 +1,4 @@
-package flink_to_ck;
+package Flink_To_Ck;
 
 import java.io.Serializable;
 
