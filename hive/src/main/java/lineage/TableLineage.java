@@ -117,7 +117,7 @@ public class TableLineage implements NodeProcessor {
         // String query = "SELECT user_id, username from ods_touna.dw_user limit 10";
 
         String query = "";
-        File file = new File("E:\\JavaWorkshop\\bigdata-learn\\hive\\src\\main\\resources\\xxx.sql");
+        File file = new File("D:\\github\\bigdata-learn\\hive\\src\\main\\resources\\test.sql");
         long length = file.length();
         byte[] bytes = new byte[(int) length];
         try {
