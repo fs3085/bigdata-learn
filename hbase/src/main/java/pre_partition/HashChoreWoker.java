@@ -1,5 +1,6 @@
 package pre_partition;
 
+import org.apache.commons.codec.digest.DigestUtils;
 import org.apache.commons.lang.StringUtils;
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.hbase.HBaseConfiguration;
@@ -87,6 +88,15 @@ public class HashChoreWoker {
             logger.info("created hbase table {} completed!, with columnFamily {} and {} regions.", name,
                     entry.getValue(), regionNum);
         }
+        admin.close();
+    }
+
+    //获取rowkey
+    public static String getRowKey(String str, Integer numRegion) {
+        int result = (str.hashCode() & Integer.MAX_VALUE) % numRegion;
+        String prefix = StringUtils.leftPad(result + "", 4, "0");
+        String suffix = DigestUtils.md5Hex(str).substring(0, 12);
+        return prefix + suffix;
     }
 
 
