@@ -104,7 +104,7 @@ public class TemporalTable {
         //如果使用的是process time定义窗口event time，所以消息中的timestamp字段并没有使用
         //使用timestamp 作为出发时间时间戳，此时必须添加.rowtime后缀
         //tableEnv.registerDataStream("browse", browseStream, "userID,eventTime,eventTimeTimestamp,eventType,productID,productPrice,browseRowtime.rowtime");
-        tableEnv.createTemporaryView("browse",browseStream,$("userID"), $("eventTime"),$("eventTimeTimestamp"), $("eventType"),$("productID"), $("productPrice"), $("browseRowtime").rowtime());
+        tableEnv.createTemporaryView("browse", browseStream, $("userID"), $("eventTime"), $("eventTimeTimestamp"), $("eventType"), $("productID"), $("productPrice"), $("browseRowtime").rowtime());
 
         //4、注册时态表(Temporal Table)
         //注意: 为了在北京时间和时间戳之间有直观的认识，这里的ProductInfo中增加了一个字段updatedAtTimestamp作为updatedAt的时间戳
@@ -121,7 +121,7 @@ public class TemporalTable {
         TemporalTableFunction productInfo = tableEnv.from("productInfo").createTemporalTableFunction($("productInfoRowtime"), $("productID"));
         //注册TableFunction
         tableEnv.createTemporaryFunction("productInfoFunc", productInfo);
-        tableEnv.toAppendStream(tableEnv.scan("productInfo"),Row.class).print();
+        tableEnv.toAppendStream(tableEnv.scan("productInfo"), Row.class).print();
 
         //5、运行SQL
         String sql = ""
