@@ -121,7 +121,7 @@ public class TemporalTable {
         TemporalTableFunction productInfo = tableEnv.from("productInfo").createTemporalTableFunction($("productInfoRowtime"), $("productID"));
         //注册TableFunction
         tableEnv.createTemporaryFunction("productInfoFunc", productInfo);
-        tableEnv.toAppendStream(tableEnv.scan("productInfo"), Row.class).print();
+        tableEnv.toAppendStream(tableEnv.from("productInfo"), Row.class).print();
 
         //5、运行SQL
         String sql = ""
