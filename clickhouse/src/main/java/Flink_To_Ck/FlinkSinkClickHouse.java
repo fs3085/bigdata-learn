@@ -8,10 +8,12 @@ import org.apache.flink.streaming.api.datastream.DataStream;
 import org.apache.flink.streaming.api.environment.StreamExecutionEnvironment;
 import org.apache.flink.table.api.EnvironmentSettings;
 import org.apache.flink.table.api.Table;
+import org.apache.flink.table.api.TableConfig;
 import org.apache.flink.table.api.bridge.java.StreamTableEnvironment;
 
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
+import java.time.ZoneId;
 
 
 public class FlinkSinkClickHouse {
@@ -55,6 +57,10 @@ public class FlinkSinkClickHouse {
 
         //将Table转换为DataStream
         DataStream<Ck> resultDataStream = tEnv.toAppendStream(table, Ck.class);
+
+//        TableConfig tableConfig = new TableConfig();
+//        ZoneId zoneId = ZoneId.of("+8");
+//        tableConfig.setLocalTimeZone( zoneId);
 
         String insertIntoCkSql = "INSERT INTO behavior_mergetree(userid,items,create_date)\n" +
                 "VALUES(?,?,?)";
