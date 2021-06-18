@@ -8,6 +8,8 @@ import org.apache.flink.table.api.bridge.java.StreamTableEnvironment;
 import org.apache.flink.types.Row;
 import org.apache.flink.util.CloseableIterator;
 
+import java.time.ZoneId;
+
 public class MysqlCDC {
     public static void main(String[] args) throws Exception{
         StreamExecutionEnvironment env = StreamExecutionEnvironment.getExecutionEnvironment();
@@ -20,7 +22,8 @@ public class MysqlCDC {
                 .build();
         StreamTableEnvironment tEnv = StreamTableEnvironment.create(env, settings);
 
-        //
+        //tEnv.getConfig().setLocalTimeZone(ZoneId.of("Asia/Shanghai"));
+
         tEnv.executeSql("CREATE TABLE student(\n" +
                 "stu_name STRING,\n" +
                 "course STRING,\n" +
@@ -50,8 +53,7 @@ public class MysqlCDC {
                 "'table-name' = 'stu_count'\n" +
                 ")");
 
-        String sql ="select stu_name,COALESCE(sum(DISTINCT case when score<100 then 1 else 0 end),0) as counts from student group by stu_name";
-        //String sql ="insert into student_count select stu_name,count(1) as counts from student group by stu_name";
+        String sql ="insert into student_count select stu_name,count(1) as counts from student group by stu_name";
 
         tEnv.executeSql(sql).print();
 
