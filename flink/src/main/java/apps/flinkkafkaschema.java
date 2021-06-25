@@ -1,6 +1,7 @@
 package apps;
 
 
+import org.apache.flink.api.common.eventtime.WatermarkStrategy;
 import org.apache.flink.api.common.functions.FlatMapFunction;
 import org.apache.flink.api.common.typeinfo.BasicTypeInfo;
 import org.apache.flink.api.common.typeinfo.TypeInformation;
@@ -15,17 +16,17 @@ import org.apache.kafka.clients.consumer.ConsumerRecord;
 import org.apache.kafka.clients.producer.ProducerRecord;
 
 import java.nio.charset.StandardCharsets;
+import java.time.Duration;
 import java.util.Properties;
 
 /**
  * SimpleStringSchema：返回的结果只有Kafka的value，而没有其它信息
- *TypeInformationKeyValueSerializationSchema：返回的结果只有Kafka的key,value，而没有其它信息
- *需要获得Kafka的topic或者其它信息，就需要通过实现KafkaDeserializationSchema接口来自定义返回数据的结构
+ * TypeInformationKeyValueSerializationSchema：返回的结果只有Kafka的key,value，而没有其它信息
+ * 需要获得Kafka的topic或者其它信息，就需要通过实现KafkaDeserializationSchema接口来自定义返回数据的结构
  */
 
 
-
-public class  flinkkafkaschema{
+public class flinkkafkaschema {
     public static void main(String[] args) throws Exception {
         StreamExecutionEnvironment env = StreamExecutionEnvironment.getExecutionEnvironment();
 
@@ -35,6 +36,18 @@ public class  flinkkafkaschema{
 
         FlinkKafkaConsumer<Tuple2<String, String>> kafkaConsumer = new FlinkKafkaConsumer<>("test006", new CustomKafkaDeserializationSchema(), properties);
         kafkaConsumer.setStartFromEarliest();
+
+        /**
+         * 当使用 Apache Kafka 连接器作为数据源时，每个 Kafka 分区可能有一个简单的事件时间模式（递增的时间戳或有界无序）。然而，当使用 Kafka 数据源时，多个分区常常并行使用，因此交错来自各个分区的事件数据就会破坏每个分区的事件时间模式（这是 Kafka 消费客户端所固有的）。
+         *
+         * 在这种情况下，你可以使用 Flink 中可识别 Kafka 分区的 watermark 生成机制。使用此特性，将在 Kafka 消费端内部针对每个 Kafka 分区生成 watermark，并且不同分区 watermark 的合并方式与在数据流 shuffle 时的合并方式相同。
+         *
+         * 例如，如果每个 Kafka 分区中的事件时间戳严格递增，则使用时间戳单调递增按分区生成的 watermark 将生成完美的全局 watermark。注意，我们在示例中未使用 TimestampAssigner，而是使用了 Kafka 记录自身的时间戳。
+         * */
+        kafkaConsumer.assignTimestampsAndWatermarks(
+                WatermarkStrategy.forBoundedOutOfOrderness(Duration.ofSeconds(20))
+        );
+
         env.addSource(kafkaConsumer).flatMap(new FlatMapFunction<Tuple2<String, String>, Object>() {
             @Override
             public void flatMap(Tuple2<String, String> value, Collector<Object> out) throws Exception {
