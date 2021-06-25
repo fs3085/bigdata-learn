@@ -1,4 +1,4 @@
-package apps;
+package Demo.Flink_KafkaSchema;
 
 
 import org.apache.flink.api.common.eventtime.WatermarkStrategy;
