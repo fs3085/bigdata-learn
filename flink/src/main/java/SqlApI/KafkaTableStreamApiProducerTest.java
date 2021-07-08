@@ -4,6 +4,7 @@ import org.apache.flink.streaming.api.datastream.DataStream;
 import org.apache.flink.streaming.api.environment.StreamExecutionEnvironment;
 import org.apache.flink.table.api.EnvironmentSettings;
 import org.apache.flink.table.api.Table;
+import org.apache.flink.table.api.TableEnvironment;
 import org.apache.flink.table.api.bridge.java.StreamTableEnvironment;
 import org.apache.flink.types.Row;
 
@@ -17,6 +18,13 @@ public class KafkaTableStreamApiProducerTest {
                                                           .useBlinkPlanner()
                                                           .build();
         StreamTableEnvironment tableEnv = StreamTableEnvironment.create(env, settings);
+
+        //基于Blink的批处理
+        EnvironmentSettings blinkBatchSettings = EnvironmentSettings.newInstance()
+                .useBlinkPlanner()
+                .inBatchMode()
+                .build();
+        TableEnvironment blinkBatchTableEnv = TableEnvironment.create(blinkBatchSettings);
 
         Long baseTimestamp = 1600855709000L;
 //        DataStream<CustomerStatusChangedEvent> eventDataSet = env.fromElements(
