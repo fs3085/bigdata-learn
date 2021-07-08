@@ -4,116 +4,26 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a2701f21-ae57-441a-9e72-922dc146ee3f" name="Default Changelist" comment="更新docs和images目录">
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flink/docs/flink笔记.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+    <list default="true" id="a2701f21-ae57-441a-9e72-922dc146ee3f" name="Default Changelist" comment="注册table,执行flinksql">
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/canal/配置文档/canal.md" beforeDir="false" afterPath="$PROJECT_DIR$/canal/docs/canal配置文档.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clickhouse/CK day01.xmind" beforeDir="false" afterPath="$PROJECT_DIR$/clickhouse/docs/CK day01.xmind" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clickhouse/clickhouse.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink/docs/Flink 开发生产问题汇总.md" beforeDir="false" afterPath="$PROJECT_DIR$/flink/docs/Flink 开发生产问题汇总.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink/docs/flink双流join.md" beforeDir="false" afterPath="$PROJECT_DIR$/flink/docs/flink双流join.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink/docs/flink安装.md" beforeDir="false" afterPath="$PROJECT_DIR$/flink/docs/flink安装.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink/src/main/java/Window/WindowTest1_TimeWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/flink/src/main/java/Window/WindowTest1_TimeWindow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink/src/main/java/kafkajoinmysql/flink实时读取kafka数据关联mysql" beforeDir="false" afterPath="$PROJECT_DIR$/flink/src/main/java/kafkajoinmysql/flink实时读取kafka数据关联mysql.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink/笔记.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink1.10/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink1.10/src/main/java/FlinkHive/FlinkReadHiveAndWriteMysql.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink1.10/src/main/java/FlinkRedis/FlinkKafkaToRedis.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink1.10/src/main/java/FlinkRedis/FlinkUtil.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink1.10/src/main/java/FlinkRedis/MyRedisSink.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink1.10/src/main/java/FlinkRedis/RichFunction.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink1.10/src/main/java/FlinkRedis/flink-config.propertites" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink1.10/src/main/java/ProcessFunctionAPI/KeyedProcessFunctions.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink1.10/src/main/java/ProcessFunctionAPI/SideOutput.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink1.10/src/main/java/RichFunctionAPI/RichFlatMapFunctions.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink1.10/src/main/java/StateBackend/FsStateBackends.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink1.10/src/main/java/Watermarks/WindowTest3_EventTimeWindow.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink1.10/src/main/java/Window/WindowFunction.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink1.10/src/main/java/Window/WindowTest1_TimeWindow.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink1.10/src/main/java/apps/MySensor.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink1.10/src/main/java/apps/SensorReading.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink1.10/src/main/java/apps/SourceTest_MySensor.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink1.10/src/main/java/apps/test.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink1.10/src/main/java/kafkajoinmysql/ActivityBean.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink1.10/src/main/java/kafkajoinmysql/C01_DataToActivityBeanFunction.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink1.10/src/main/java/kafkajoinmysql/C01_QueryActivityName.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink1.10/src/main/java/kafkajoinmysql/Producer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink1.10/src/main/java/kafkajoinmysql/项目文档" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink1.10/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink1.10/src/main/scala/TableAPI/SensorReading.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink1.10/src/main/scala/TableAPI/test01.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink1.10/src/main/scala/window/EventTimeSessionWindow.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink1.10/src/main/scala/window/SlidingEventTimeWindow.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink1.10/src/main/scala/window/TumblingEventTimeWindow.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink1.10/target/classes/FlinkRedis/FlinkKafkaToRedis$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink1.10/target/classes/FlinkRedis/FlinkKafkaToRedis.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink1.10/target/classes/FlinkRedis/FlinkUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink1.10/target/classes/FlinkRedis/MyRedisSink.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink1.10/target/classes/FlinkRedis/RichFunction.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink1.10/target/classes/ProcessFunctionAPI/KeyedProcessFunctions$TempIncreaseWarning.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink1.10/target/classes/ProcessFunctionAPI/KeyedProcessFunctions.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink1.10/target/classes/ProcessFunctionAPI/SideOutput$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink1.10/target/classes/ProcessFunctionAPI/SideOutput$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink1.10/target/classes/ProcessFunctionAPI/SideOutput.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink1.10/target/classes/RichFunctionAPI/RichFlatMapFunctions$TempIncreaseWarning.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink1.10/target/classes/RichFunctionAPI/RichFlatMapFunctions.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink1.10/target/classes/StateBackend/FsStateBackends.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink1.10/target/classes/TableAPI/SensorReading$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink1.10/target/classes/TableAPI/SensorReading.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink1.10/target/classes/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink1.10/target/classes/apps/MySensor.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink1.10/target/classes/apps/SensorReading.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink1.10/target/classes/apps/SourceTest_MySensor$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink1.10/target/classes/apps/SourceTest_MySensor$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink1.10/target/classes/apps/SourceTest_MySensor$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink1.10/target/classes/apps/SourceTest_MySensor$4.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink1.10/target/classes/apps/SourceTest_MySensor$MyEsSinkFunction.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink1.10/target/classes/apps/SourceTest_MySensor$MyJdbcSink.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink1.10/target/classes/apps/SourceTest_MySensor$MyMapFunction.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink1.10/target/classes/apps/SourceTest_MySensor$MyRedisMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink1.10/target/classes/apps/SourceTest_MySensor.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink1.10/target/classes/apps/test.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink1.10/target/classes/kafkajoinmysql/ActivityBean.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink1.10/target/classes/kafkajoinmysql/C01_DataToActivityBeanFunction.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink1.10/target/classes/kafkajoinmysql/C01_QueryActivityName.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink1.10/target/classes/window/EventTimeSessionWindow$$anon$2$$anon$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink1.10/target/classes/window/EventTimeSessionWindow$$anon$2$$anonfun$createSerializer$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink1.10/target/classes/window/EventTimeSessionWindow$$anon$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink1.10/target/classes/window/EventTimeSessionWindow$$anon$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink1.10/target/classes/window/EventTimeSessionWindow$$anonfun$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink1.10/target/classes/window/EventTimeSessionWindow$$anonfun$main$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink1.10/target/classes/window/EventTimeSessionWindow$$anonfun$main$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink1.10/target/classes/window/EventTimeSessionWindow$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink1.10/target/classes/window/EventTimeSessionWindow.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink1.10/target/classes/window/SlidingEventTimeWindow$$anon$2$$anon$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink1.10/target/classes/window/SlidingEventTimeWindow$$anon$2$$anonfun$createSerializer$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink1.10/target/classes/window/SlidingEventTimeWindow$$anon$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink1.10/target/classes/window/SlidingEventTimeWindow$$anon$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink1.10/target/classes/window/SlidingEventTimeWindow$$anon$5$$anon$4.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink1.10/target/classes/window/SlidingEventTimeWindow$$anon$5.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink1.10/target/classes/window/SlidingEventTimeWindow$$anonfun$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink1.10/target/classes/window/SlidingEventTimeWindow$$anonfun$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink1.10/target/classes/window/SlidingEventTimeWindow$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink1.10/target/classes/window/SlidingEventTimeWindow.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink1.10/target/classes/window/TumblingEventTimeWindow$$anon$2$$anon$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink1.10/target/classes/window/TumblingEventTimeWindow$$anon$2$$anonfun$createSerializer$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink1.10/target/classes/window/TumblingEventTimeWindow$$anon$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink1.10/target/classes/window/TumblingEventTimeWindow$$anon$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink1.10/target/classes/window/TumblingEventTimeWindow$$anon$5$$anon$4.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink1.10/target/classes/window/TumblingEventTimeWindow$$anon$5.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink1.10/target/classes/window/TumblingEventTimeWindow$$anonfun$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink1.10/target/classes/window/TumblingEventTimeWindow$$anonfun$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink1.10/target/classes/window/TumblingEventTimeWindow$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink1.10/target/classes/window/TumblingEventTimeWindow.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink1.10/笔记.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hbase/hbase笔记.sql" beforeDir="false" afterPath="$PROJECT_DIR$/hbase/docs/hbase笔记.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flink/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/flink/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flink/src/main/java/Demo/FlinkSql_Retract/ProEve_Time.java" beforeDir="false" afterPath="$PROJECT_DIR$/flink/src/main/java/Demo/FlinkSql_Retract/ProEve_Time.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flink/src/main/java/ProcessFunctionAPI/Test1_KeyedProcessFunction.java" beforeDir="false" afterPath="$PROJECT_DIR$/flink/src/main/java/ProcessFunctionAPI/Test1_KeyedProcessFunction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flink/src/main/java/SqlApI/KafkaTableStreamApiProducerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/flink/src/main/java/SqlApI/KafkaTableStreamApiProducerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flink/target/classes/SqlApI/KafkaTableStreamApiProducerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/flink/target/classes/SqlApI/KafkaTableStreamApiProducerTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flink/target/classes/StateBackend/FsStateBackends.class" beforeDir="false" afterPath="$PROJECT_DIR$/flink/target/classes/StateBackend/FsStateBackends.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hbase/src/main/java/MR/HBase_MapReduce1/ReadFruitMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/hbase/src/main/java/MR/HBase_MapReduce1/ReadFruitMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hbase/src/main/java/MR/HBase_MapReduce1/WriteFruitMRReducer.java" beforeDir="false" afterPath="$PROJECT_DIR$/hbase/src/main/java/MR/HBase_MapReduce1/WriteFruitMRReducer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hive/target/classes/lineage/TableLineage.class" beforeDir="false" afterPath="$PROJECT_DIR$/hive/target/classes/lineage/TableLineage.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
   </component>
   <component name="FavoritesManager">
     <favorites_list name="bigdatalearn" />
@@ -124,6 +34,7 @@
         <option value="Scala Object" />
         <option value="Scala Class" />
         <option value="FxmlFile" />
+        <option value="Kotlin Class" />
         <option value="Class" />
       </list>
     </option>
@@ -152,6 +63,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/hive/docs/用mysql变量实现lag函数功能.md" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
@@ -237,6 +156,9 @@
       <select />
     </treeState>
   </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-1928" />
     <option name="y" value="-194" />
@@ -315,17 +237,20 @@
   </component>
   <component name="PropertiesComponent">
     <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="SearchEverywhereHistoryKey" value="JobContext&#9;PSI&#9;JAVA://org.apache.hadoop.mapred.JobContext&#10;ExecutorFactory&#9;FILE&#9;jar://D:/Maven_Repo/org/apache/flink/flink-table-api-java/1.10.1/flink-table-api-java-1.10.1.jar!/org/apache/flink/table/delegation/ExecutorFactory.class" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1616402024550" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../项目/Operating_diagnostics" />
+    <property name="project.structure.last.edited" value="Global Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.56436783" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.tabs" />
     <property name="two.files.diff.last.used.folder" value="$PROJECT_DIR$/flink/src/main/scala" />
   </component>
   <component name="RecentsManager">
@@ -334,29 +259,103 @@
       <recent name="apps" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\github\bigdata-learn\flink\images" />
       <recent name="D:\github\bigdata-learn\flink\src\main\java\Flink_CDC" />
-      <recent name="D:\github\bigdata-learn\flink1.10" />
-      <recent name="D:\github\bigdata-learn\flink\src\main\java" />
-      <recent name="D:\github\bigdata-learn\flink\src\main\resources" />
+      <recent name="D:\github\bigdata-learn\hive\docs" />
+      <recent name="D:\github\bigdata-learn\flink\images" />
+      <recent name="D:\github\bigdata-learn\hive\images" />
+      <recent name="D:\github\bigdata-learn\hbase\images" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\github\bigdata-learn\clickhouse\docs" />
-      <recent name="D:\github\bigdata-learn\hbase\docs" />
-      <recent name="D:\github\bigdata-learn\hive\images" />
+      <recent name="D:\github\bigdata-learn\flink\src\main\java\SqlApI\Temporal" />
       <recent name="D:\github\bigdata-learn\flink\docs" />
-      <recent name="D:\github\bigdata-learn\flink\src\main\java" />
+      <recent name="D:\github\bigdata-learn\flink\src\main\java\Watermarks" />
+      <recent name="D:\github\bigdata-learn\flink\src\main\java\Watermarks\docs" />
+      <recent name="D:\github\bigdata-learn\clickhouse\docs" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.ProEve_Time">
+    <configuration name="KeyNames" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Flink_CDC.KeyNames" />
+      <module name="flink" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Demo.Flink_KafkaSchema.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProEve_Time" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Demo.FlinkSql_Retract.ProEve_Time" />
+      <module name="flink" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Demo.FlinkSql_Retract.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Unnamed" type="Application" factoryName="Application" nameIsGenerated="true">
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="bytearray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="pre_partition.bytearray" />
+      <module name="hbase" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pre_partition.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="pre_partition.test" />
+      <module name="hbase" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pre_partition.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ProcessFunctionAPI.test" />
+      <module name="flink" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ProcessFunctionAPI.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.ProEve_Time" />
+        <item itemvalue="Application.test" />
+        <item itemvalue="Application.bytearray" />
+        <item itemvalue="Application.test (1)" />
+        <item itemvalue="Application.test (1)" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
@@ -370,112 +369,350 @@
       <option name="presentableId" value="Default" />
       <updated>1608694756974</updated>
     </task>
-    <task id="LOCAL-00001" summary="first update">
-      <created>1615352465959</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
+    <task id="LOCAL-00034" summary="mapreduce环形缓冲区.jpg">
+      <created>1618544807372</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
       <option name="project" value="LOCAL" />
-      <updated>1615352465959</updated>
+      <updated>1618544807372</updated>
     </task>
-    <task id="LOCAL-00002" summary="spark update">
-      <created>1615356865065</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
+    <task id="LOCAL-00035" summary="mapreduce环形缓冲区.jpg">
+      <created>1618544925763</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
       <option name="project" value="LOCAL" />
-      <updated>1615356865065</updated>
+      <updated>1618544925763</updated>
     </task>
-    <task id="LOCAL-00003" summary="1、Spark学习资料文档&#10;2、Spark消费Kafka并手动维护偏移量到Mysql">
-      <created>1615359872937</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
+    <task id="LOCAL-00036" summary="mapreduce源码.md 更新">
+      <created>1618557967832</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
       <option name="project" value="LOCAL" />
-      <updated>1615359872937</updated>
+      <updated>1618557967832</updated>
     </task>
-    <task id="LOCAL-00004" summary="1、Spark学习资料文档&#10;2、canal文档">
-      <created>1615369051900</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
+    <task id="LOCAL-00037" summary="rdd.md">
+      <created>1618817551468</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
       <option name="project" value="LOCAL" />
-      <updated>1615369051900</updated>
+      <updated>1618817551468</updated>
     </task>
-    <task id="LOCAL-00005" summary="1、Spark学习资料文档&#10;2、canal文档">
-      <created>1615369223296</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
+    <task id="LOCAL-00038" summary="Flink SQL 如何实现列转行">
+      <created>1619343634226</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
       <option name="project" value="LOCAL" />
-      <updated>1615369223296</updated>
+      <updated>1619343634226</updated>
     </task>
-    <task id="LOCAL-00006" summary="update flink">
-      <created>1615430612445</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
+    <task id="LOCAL-00039" summary="Flink on YARN">
+      <created>1619420499292</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
       <option name="project" value="LOCAL" />
-      <updated>1615430612445</updated>
+      <updated>1619420499292</updated>
     </task>
-    <task id="LOCAL-00007" summary="update flink Spilt-Select和Side-Outputs">
-      <created>1615521066285</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
+    <task id="LOCAL-00040" summary="Spark on YARN">
+      <created>1619420537685</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
       <option name="project" value="LOCAL" />
-      <updated>1615521066285</updated>
+      <updated>1619420537685</updated>
     </task>
-    <task id="LOCAL-00008" summary="update flink笔记 clickhouse模块 hbase笔记">
-      <created>1615860216671</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
+    <task id="LOCAL-00041" summary="更新">
+      <created>1619420706320</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
       <option name="project" value="LOCAL" />
-      <updated>1615860216671</updated>
+      <updated>1619420706320</updated>
     </task>
-    <task id="LOCAL-00009" summary="update">
-      <created>1616150999623</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
+    <task id="LOCAL-00042" summary="spark on yarn.png">
+      <created>1619420886095</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
       <option name="project" value="LOCAL" />
-      <updated>1616150999623</updated>
+      <updated>1619420886095</updated>
     </task>
-    <task id="LOCAL-00010" summary="update">
-      <created>1616388839018</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
+    <task id="LOCAL-00043" summary="spark on yarn.png">
+      <created>1619420969485</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
       <option name="project" value="LOCAL" />
-      <updated>1616388839018</updated>
+      <updated>1619420969485</updated>
     </task>
-    <task id="LOCAL-00011" summary="update">
-      <created>1616394874832</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
+    <task id="LOCAL-00044" summary="jdbc.md">
+      <created>1620728378765</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
       <option name="project" value="LOCAL" />
-      <updated>1616394874832</updated>
+      <updated>1620728378765</updated>
     </task>
-    <task id="LOCAL-00012" summary="update">
-      <created>1616395505737</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
+    <task id="LOCAL-00045" summary="flink从kafka读取数据sink到clickhouse">
+      <created>1621221735511</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
       <option name="project" value="LOCAL" />
-      <updated>1616395505738</updated>
+      <updated>1621221735511</updated>
     </task>
-    <task id="LOCAL-00013" summary="window增量/全量聚合函数，其它可选API">
-      <created>1616400887140</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
+    <task id="LOCAL-00046" summary="flink从kafka读取数据sink到clickhouse">
+      <created>1621221879698</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
       <option name="project" value="LOCAL" />
-      <updated>1616400887140</updated>
+      <updated>1621221879698</updated>
     </task>
-    <task id="LOCAL-00014" summary="update">
-      <created>1616410065901</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
+    <task id="LOCAL-00047" summary="Flink任务提交流程（Yarn-Per-Job ）.png">
+      <created>1621222033831</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
       <option name="project" value="LOCAL" />
-      <updated>1616410065901</updated>
+      <updated>1621222033831</updated>
     </task>
-    <task id="LOCAL-00015" summary="更新docs和images目录">
-      <created>1616421607967</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
+    <task id="LOCAL-00048" summary="1.Timestamp 分配和 Watermark 生成&#10;2.Watermark 传播">
+      <created>1621393898991</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
       <option name="project" value="LOCAL" />
-      <updated>1616421607967</updated>
+      <updated>1621393898991</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00049" summary="phoenix构建二级索引.md">
+      <created>1621842544016</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1621842544016</updated>
+    </task>
+    <task id="LOCAL-00050" summary="更新TableLineage.java">
+      <created>1621842586809</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1621842586811</updated>
+    </task>
+    <task id="LOCAL-00051" summary="Flink_learning_Advance.xmind">
+      <created>1621852745383</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1621852745383</updated>
+    </task>
+    <task id="LOCAL-00052" summary="Hive性能调优实战.xmind">
+      <created>1621852801638</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1621852801638</updated>
+    </task>
+    <task id="LOCAL-00053" summary="spark rdd 数据倾斜">
+      <created>1621914223669</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1621914223669</updated>
+    </task>
+    <task id="LOCAL-00054" summary="更新">
+      <created>1621924460143</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1621924460143</updated>
+    </task>
+    <task id="LOCAL-00055" summary="update -&gt; hbase笔记.md&#10;add -&gt; Hbase预分区.md">
+      <created>1621996748905</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1621996748905</updated>
+    </task>
+    <task id="LOCAL-00056" summary="add -&gt; Hbase预分区.md">
+      <created>1621996784561</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1621996784561</updated>
+    </task>
+    <task id="LOCAL-00057" summary="add -&gt; bytearray.java byte数组">
+      <created>1622022109693</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1622022109693</updated>
+    </task>
+    <task id="LOCAL-00058" summary="add -&gt; HashChoreWoker.java&#10;describle:Hbase javaApi建表，预分区">
+      <created>1622022193777</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1622022193777</updated>
+    </task>
+    <task id="LOCAL-00059" summary="update -&gt; HashChoreWoker.java&#10;describle:Hbase javaApi创建rowkey方法">
+      <created>1622023604111</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1622023604111</updated>
+    </task>
+    <task id="LOCAL-00060" summary="update -&gt; pom.xml">
+      <created>1622023841684</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1622023841684</updated>
+    </task>
+    <task id="LOCAL-00061" summary="add --&gt; Temporal package&#10;时态表">
+      <created>1622206794087</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1622206794096</updated>
+    </task>
+    <task id="LOCAL-00062" summary="update --&gt; TemporalTable.java">
+      <created>1622209918298</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1622209918299</updated>
+    </task>
+    <task id="LOCAL-00063" summary="update --&gt; TemporalTable.java">
+      <created>1622210005249</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1622210005249</updated>
+    </task>
+    <task id="LOCAL-00064" summary="add --&gt; 测试文件.json">
+      <created>1622211102147</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1622211102147</updated>
+    </task>
+    <task id="LOCAL-00065" summary="update --&gt; TemporalTable.java">
+      <created>1622448919544</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1622448919544</updated>
+    </task>
+    <task id="LOCAL-00066" summary="update --&gt; application.properties">
+      <created>1622979231189</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1622979231190</updated>
+    </task>
+    <task id="LOCAL-00067" summary="update --&gt; flink安装.md&#10;desc --&gt; Per-Job集群和Session集群的区别">
+      <created>1623837131386</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1623837131386</updated>
+    </task>
+    <task id="LOCAL-00068" summary="add --&gt; MySQL的CDC源表.md&#10;desc --&gt; MySQL的CDC使用">
+      <created>1623837179091</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1623837179091</updated>
+    </task>
+    <task id="LOCAL-00069" summary="add --&gt; MysqlCDC.java&#10;desc --&gt; 通过CDC的方式读取mysql的表，然后通过jdbc的方式写进mysql">
+      <created>1623838603856</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1623838603856</updated>
+    </task>
+    <task id="LOCAL-00070" summary="update --&gt; FlinkSinkClickHouse.java">
+      <created>1624002687648</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1624002687648</updated>
+    </task>
+    <task id="LOCAL-00071" summary="update --&gt; MysqlCDC.java">
+      <created>1624002846318</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1624002846318</updated>
+    </task>
+    <task id="LOCAL-00072" summary="add --&gt; flinkkafkaschema.java&#10;desc --&gt; flink读取读取和写入kafka自定义KafkaDeserializationSchema">
+      <created>1624002978113</created>
+      <option name="number" value="00072" />
+      <option name="presentableId" value="LOCAL-00072" />
+      <option name="project" value="LOCAL" />
+      <updated>1624002978113</updated>
+    </task>
+    <task id="LOCAL-00073" summary="update --&gt; pom文件">
+      <created>1624003118025</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1624003118025</updated>
+    </task>
+    <task id="LOCAL-00074" summary="add --&gt; 列式存储.md">
+      <created>1624260100842</created>
+      <option name="number" value="00074" />
+      <option name="presentableId" value="LOCAL-00074" />
+      <option name="project" value="LOCAL" />
+      <updated>1624260100843</updated>
+    </task>
+    <task id="LOCAL-00075" summary="update --&gt; flinkkafkaschema.java&#10;desc --&gt; 更新从kafka从数据源添加watermarts">
+      <created>1624592288897</created>
+      <option name="number" value="00075" />
+      <option name="presentableId" value="LOCAL-00075" />
+      <option name="project" value="LOCAL" />
+      <updated>1624592288897</updated>
+    </task>
+    <task id="LOCAL-00076" summary="update 目录">
+      <created>1624593111964</created>
+      <option name="number" value="00076" />
+      <option name="presentableId" value="LOCAL-00076" />
+      <option name="project" value="LOCAL" />
+      <updated>1624593111964</updated>
+    </task>
+    <task id="LOCAL-00077" summary="add --&gt; Vertx.md">
+      <created>1625126671166</created>
+      <option name="number" value="00077" />
+      <option name="presentableId" value="LOCAL-00077" />
+      <option name="project" value="LOCAL" />
+      <updated>1625126671167</updated>
+    </task>
+    <task id="LOCAL-00078" summary="add --&gt; flink异步读取redis">
+      <created>1625126718287</created>
+      <option name="number" value="00078" />
+      <option name="presentableId" value="LOCAL-00078" />
+      <option name="project" value="LOCAL" />
+      <updated>1625126718287</updated>
+    </task>
+    <task id="LOCAL-00079" summary="add --&gt; flink异步读取mysql">
+      <created>1625126736673</created>
+      <option name="number" value="00079" />
+      <option name="presentableId" value="LOCAL-00079" />
+      <option name="project" value="LOCAL" />
+      <updated>1625126736673</updated>
+    </task>
+    <task id="LOCAL-00080" summary="Flink提交任务">
+      <created>1625473376368</created>
+      <option name="number" value="00080" />
+      <option name="presentableId" value="LOCAL-00080" />
+      <option name="project" value="LOCAL" />
+      <updated>1625473376369</updated>
+    </task>
+    <task id="LOCAL-00081" summary="Hive窗口函数使用">
+      <created>1625473571653</created>
+      <option name="number" value="00081" />
+      <option name="presentableId" value="LOCAL-00081" />
+      <option name="project" value="LOCAL" />
+      <updated>1625473571653</updated>
+    </task>
+    <task id="LOCAL-00082" summary="注册table,执行flinksql">
+      <created>1625475683467</created>
+      <option name="number" value="00082" />
+      <option name="presentableId" value="LOCAL-00082" />
+      <option name="project" value="LOCAL" />
+      <updated>1625475683467</updated>
+    </task>
+    <option name="localTasksCounter" value="83" />
     <servers />
   </component>
   <component name="TodoView">
@@ -560,17 +797,73 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="first update" />
-    <MESSAGE value="spark update" />
-    <MESSAGE value="1、Spark学习资料文档&#10;2、Spark消费Kafka并手动维护偏移量到Mysql" />
-    <MESSAGE value="1、Spark学习资料文档&#10;2、canal文档" />
-    <MESSAGE value="update flink" />
-    <MESSAGE value="update flink Spilt-Select和Side-Outputs" />
-    <MESSAGE value="update flink笔记 clickhouse模块 hbase笔记" />
-    <MESSAGE value="window增量/全量聚合函数，其它可选API" />
-    <MESSAGE value="update" />
-    <MESSAGE value="更新docs和images目录" />
-    <option name="LAST_COMMIT_MESSAGE" value="更新docs和images目录" />
+    <MESSAGE value="add -&gt; Hbase预分区.md" />
+    <MESSAGE value="add -&gt; bytearray.java byte数组" />
+    <MESSAGE value="add -&gt; HashChoreWoker.java&#10;describle:Hbase javaApi建表，预分区" />
+    <MESSAGE value="update -&gt; HashChoreWoker.java&#10;describle:Hbase javaApi创建rowkey方法" />
+    <MESSAGE value="update -&gt; pom.xml" />
+    <MESSAGE value="add --&gt; Temporal package&#10;时态表" />
+    <MESSAGE value="add --&gt; 测试文件.json" />
+    <MESSAGE value="update --&gt; TemporalTable.java" />
+    <MESSAGE value="update --&gt; application.properties" />
+    <MESSAGE value="update --&gt; flink安装.md&#10;desc --&gt; Per-Job集群和Session集群的区别" />
+    <MESSAGE value="add --&gt; MySQL的CDC源表.md&#10;desc --&gt; MySQL的CDC使用" />
+    <MESSAGE value="add --&gt; MysqlCDC.java&#10;desc --&gt; 通过CDC的方式读取mysql的表，然后通过jdbc的方式写进mysql" />
+    <MESSAGE value="update --&gt; FlinkSinkClickHouse.java" />
+    <MESSAGE value="update --&gt; MysqlCDC.java" />
+    <MESSAGE value="add --&gt; flinkkafkaschema.java&#10;desc --&gt; flink读取读取和写入kafka自定义KafkaDeserializationSchema" />
+    <MESSAGE value="update --&gt; pom文件" />
+    <MESSAGE value="add --&gt; 列式存储.md" />
+    <MESSAGE value="update --&gt; flinkkafkaschema.java&#10;desc --&gt; 更新从kafka从数据源添加watermarts" />
+    <MESSAGE value="update 目录" />
+    <MESSAGE value="add --&gt; Vertx.md" />
+    <MESSAGE value="add --&gt; flink异步读取redis" />
+    <MESSAGE value="add --&gt; flink异步读取mysql" />
+    <MESSAGE value="Flink提交任务" />
+    <MESSAGE value="Hive窗口函数使用" />
+    <MESSAGE value="注册table,执行flinksql" />
+    <option name="LAST_COMMIT_MESSAGE" value="注册table,执行flinksql" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/com/alibaba/ververica/flink-connector-mysql-cdc/1.2.0/flink-connector-mysql-cdc-1.2.0.jar!/com/alibaba/ververica/cdc/debezium/table/RowDataDebeziumDeserializeSchema.class</url>
+          <line>327</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/flink/src/main/java/Watermarks/ExtractTimestampAndGenerateWatermark.java</url>
+          <line>120</line>
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/flink/src/main/java/Watermarks/ExtractTimestampAndGenerateWatermark.java</url>
+          <line>53</line>
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/../../github_xm/test/src/main/java/com/wcl/acctount/test.java</url>
+          <line>164</line>
+          <option name="timeStamp" value="25" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/../../github_xm/test/src/main/java/com/wcl/acctount/test.java</url>
+          <line>193</line>
+          <option name="timeStamp" value="26" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/../../github_xm/test/src/main/java/com/wcl/acctount/test.java</url>
+          <line>18</line>
+          <option name="timeStamp" value="27" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="watermarks" />
+      </configuration>
+    </watches-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
