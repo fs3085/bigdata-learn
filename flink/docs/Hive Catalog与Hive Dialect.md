@@ -1,6 +1,9 @@
 ## 什么是Hive Catalog
 
-Hive Catalog的主要作用是使用Hive MetaStore去管理Flink的元数据。
+Hive使用Hive Metastore(HMS)存储元数据信息，使用关系型数据库来持久化存储这些信息。所以，Flink集成Hive需要打通Hive的metastore，去管理Flink的元数据，这就是Hive Catalog的功能。
+
+Hive Catalog的主要作用是使用Hive MetaStore去管理Flink的元数据。Hive Catalog可以将元数据进行持久化，这样后续的操作就可以反复使用这些表的元数据，而不用每次使用时都要重新注册。如果不去持久化catalog，那么在每个session中取处理数据，都要去重复地创建元数据对象，这样是非常耗时的。
+
 HiveCatalog可以处理两种类型的表：一种是Hive兼容的表，另一种是普通表(generic table)。其中Hive兼容表是以兼容Hive的方式来存储的，所以，对于Hive兼容表而言，我们既可以使用Flink去操作该表，又可以使用Hive去操作该表。
 
 普通表是对Flink而言的，当使用HiveCatalog创建一张普通表，仅仅是使用Hive MetaStore将其元数据进行了持久化，所以可以通过Hive查看这些表的元数据信息(通过DESCRIBE FORMATTED命令)，但是不能通过Hive去处理这些表，因为语法不兼容。
