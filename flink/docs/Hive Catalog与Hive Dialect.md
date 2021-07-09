@@ -87,7 +87,14 @@ state.checkpoints.dir: hdfs:///user/appuser/cluster/flink/flink-checkpoints
 
 
 
+- 支持 Hive 的互操作。有了 Catalog 之后用户就可以通过 Catalog 访问 Hive 的元数据，提供 Data Connector 让用户能通过 Flink 读写 Hive 的实际数据，实现 Flink 与 Hive 的交互。
 
+- 支持 Flink 作为 Hive 的计算引擎（长期目标），像 Hive On Spark，Hive On Tez。
+
+  
+
+  有了元数据之后我们就可以实现 Flink SQL 的 Data Connector 来真正的读写 Hive 实际数据。Flink SQL 写入的数据必须要兼容 Hive 的数据格式，也就是 Hive 可以正常读取 Flink 写入的数据，反过来也是一样的。为了实现这一点我们大量复用 Hive 原有的 Input/Output Format、SerDe 等 API，一是为了减少代码冗余，二是尽可能的保持兼容性。
+  在 Data Connect 中读取 Hive 表数据具体实现类为：HiveTableSource、HiveTableInputFormat。写 Hive 表的具体实现类为：HiveTableSink、HiveTableOutputFormat。
 
 
 
