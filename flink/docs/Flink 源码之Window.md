@@ -193,7 +193,7 @@ Keyed Windows是针对KeyedStream，相同的key的事件会放在同一个Windo
 
 Assigner：Assigner是给窗口分配数据的组件，其实就是用它来定义数据是哪个window的。Function：Window是把无界流数据变成了有界流，Function就是对这个有界流进行计算的函数，由用户自己实现。
 
-Triger：Window触发器，就是什么触发Window执行Function。
+Triger：Window触发器，就是什么时候触发Window执行Function。
 
 Evictor：可以在Triger触发后，Function执行之前/之后删除数据。
 
