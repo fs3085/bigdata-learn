@@ -176,5 +176,35 @@ public class GlobalWindows extends WindowAssigner<Object, GlobalWindow> {
 
 
 - GlobalWindows继承了WindowAssigner，key类型为Object，窗口类型为GlobalWindow；GlobalWindow继承了Window，它的maxTimestamp方法与TimeWindow不同，TimeWindow有start和end属性，其maxTimestamp方法返回的是end-1；而GlobalWindow的maxTimestamp方法返回的是Long.MAX_VALUE；GlobalWindow定义了自己的Serializer
+
 - GlobalWindows的assignWindows方法返回的是GlobalWindow；getDefaultTrigger方法返回的是NeverTrigger；getWindowSerializer返回的是GlobalWindow.Serializer()；isEventTime返回的为false
+
 - NeverTrigger继承了Trigger，其onElement、onProcessingTime、onProcessingTime返回的TriggerResult均为TriggerResult.CONTINUE；该行为就是不做任何触发操作；如果需要触发操作，则需要在定义window操作时设置自定义的trigger，覆盖GlobalWindows默认的NeverTrigger
+
+  
+
+**Keyed Window和Non-keyed Window有什么区别？**
+
+Keyed Windows是针对KeyedStream，相同的key的事件会放在同一个Window中，而Non-Keyed Window是所有的数据放在一个窗口中，相当于并行度为1。KeyedWindow使用的API是window、而Non-keyed Window使用的是windowAll。
+
+
+
+**Flink的窗口模型中有哪4大组件？并做简单介绍。**
+
+Assigner：Assigner是给窗口分配数据的组件，其实就是用它来定义数据是哪个window的。Function：Window是把无界流数据变成了有界流，Function就是对这个有界流进行计算的函数，由用户自己实现。
+
+Triger：Window触发器，就是什么触发Window执行Function。
+
+Evictor：可以在Triger触发后，Function执行之前/之后删除数据。
+
+
+
+**全局窗口和Non-Keyed Window的区别？**
+
+不是一个概念。全局窗口表示的是把所有的元素都分配给一个Window。而Non-Keyed Window表示针对的是没有Key的Window，我们可以设置Non-keyed Window TumblingEventTimeWindows、SlidingEventTimeWindows、当然也可以设置全局窗口。所以，关键点在于全局窗口是一个Assigner。
+
+
+
+**Window中的Reduce/Aggregate和Process的不同点？最佳实践是什么？**
+
+首先，他们都是window的计算函数。Reduce/Aggregate是聚合函数，专门用于window的聚合，而且效率较高。而process相当于自定义处理，可以实现更灵活的窗口操作，但它不擅长聚合。所以有些场景可以将Reduce/Aggregate结合process来处理。
