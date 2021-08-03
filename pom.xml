@@ -15,6 +15,10 @@
         <module>spark</module>
         <module>flink</module>
         <module>clickhouse</module>
+        <module>elasticsearch</module>
+        <module>redis</module>
+        <module>mysql</module>
+        <module>kafka</module>
     </modules>
 
 </project>
