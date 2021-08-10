@@ -3,12 +3,14 @@ package Demo.Flink_KafkaSchema;
 
 import org.apache.flink.api.common.eventtime.WatermarkStrategy;
 import org.apache.flink.api.common.functions.FlatMapFunction;
+import org.apache.flink.api.common.serialization.SimpleStringSchema;
 import org.apache.flink.api.common.typeinfo.BasicTypeInfo;
 import org.apache.flink.api.common.typeinfo.TypeInformation;
 import org.apache.flink.api.java.tuple.Tuple2;
 import org.apache.flink.api.java.typeutils.TupleTypeInfo;
 import org.apache.flink.streaming.api.environment.StreamExecutionEnvironment;
 import org.apache.flink.streaming.connectors.kafka.FlinkKafkaConsumer;
+import org.apache.flink.streaming.connectors.kafka.FlinkKafkaProducer;
 import org.apache.flink.streaming.connectors.kafka.KafkaDeserializationSchema;
 import org.apache.flink.streaming.connectors.kafka.KafkaSerializationSchema;
 import org.apache.flink.util.Collector;
@@ -17,6 +19,8 @@ import org.apache.kafka.clients.producer.ProducerRecord;
 
 import java.nio.charset.StandardCharsets;
 import java.time.Duration;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Properties;
 
 /**
@@ -33,6 +37,16 @@ public class flinkkafkaschema {
         Properties properties = new Properties();
         properties.setProperty("bootstrap.servers", "172.16.0.52:9092");
         properties.setProperty("group.id", "test");
+//        自动发现 kafka 新增的分区
+//        在上游数据量猛增的时候，可能会选择给 kafka 新增 partition 以增加吞吐量，那么 Flink 这段如果不配置的话，就会永远读取不到 kafka 新增的分区了
+//        表示每30秒自动发现 kafka 新增的分区信息
+//        properties.put("flink.partition-discovery.interval-millis", "30000");
+
+        //自定义KafkaSerializationSchema，是先封装成byte类型的ProducerRecord<byte[], byte[]>，所以要指定properties的key/value serializer就要指定ByteArraySerializer
+        //默认是ByteArraySerializer
+//        properties.put("key.serializer","org.apache.kafka.common.serialization.StringSerializer");
+//        properties.put("value.serializer","org.apache.kafka.common.serialization.StringSerializer");
+
 
         FlinkKafkaConsumer<Tuple2<String, String>> kafkaConsumer = new FlinkKafkaConsumer<>("test006", new CustomKafkaDeserializationSchema(), properties);
         kafkaConsumer.setStartFromEarliest();
@@ -57,7 +71,7 @@ public class flinkkafkaschema {
 
 
 //        FlinkKafkaProducer<Tuple2<String, Integer>> producer = new FlinkKafkaProducer<Tuple2<String, Integer>>(topic,
-//                (KafkaSerializationSchema) new ProducerStringSerializationSchema(topic),
+//                (KafkaSerializationSchema) new ProducerKafkaserializationSchema(topic),
 //                properties,
 //                FlinkKafkaProducer.Semantic.EXACTLY_ONCE);
 //
@@ -106,7 +120,7 @@ class CustomKafkaDeserializationSchema implements KafkaDeserializationSchema<Tup
 
 
 //Tuple2<String, String>输入数据类型，序列化成byte数组
-class ProducerKafkaserializationSchema implements KafkaSerializationSchema<Tuple2<String, Integer>> {
+class ProducerKafkaserializationSchema implements KafkaSerializationSchema<String> {
 
     private String topic;
 
@@ -116,7 +130,7 @@ class ProducerKafkaserializationSchema implements KafkaSerializationSchema<Tuple
     }
 
     @Override
-    public ProducerRecord<byte[], byte[]> serialize(Tuple2<String, Integer> element, Long timestamp) {
-        return new ProducerRecord<byte[], byte[]>(topic, element.f0.getBytes(StandardCharsets.UTF_8), element.f1.toString().getBytes(StandardCharsets.UTF_8));
+    public ProducerRecord<byte[], byte[]> serialize(String element, Long timestamp) {
+        return new ProducerRecord<byte[], byte[]>(topic, element.toString().getBytes(StandardCharsets.UTF_8));
     }
 }

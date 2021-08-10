@@ -1,7 +1,4 @@
-package Demo.Flink_Source_Sink;/**
- * @Author: Yang JianQiu
- * @Date: 2019/2/23 23:37
- */
+package Demo.Flink_Source_Sink;
 
 import org.apache.flink.configuration.Configuration;
 import org.apache.flink.streaming.api.functions.sink.RichSinkFunction;
