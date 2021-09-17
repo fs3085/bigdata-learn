@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>hidi</artifactId>
+    <artifactId>hudi</artifactId>
 
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
